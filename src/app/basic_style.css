@@ -1,37 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
 *{
   margin: 0;
   padding: 0;
@@ -175,6 +141,41 @@ body {
   
 }
 /* Experimental part */
+
+/* Displaying Projects part */
+#project-heading-text{
+  color: bisque;
+  font-size: 2em;
+  text-align: center;
+  margin: 20px;
+}
+.project-container{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+.project_card{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border: 3px solid #3cc1c9ff;
+  border-radius: 5px;
+}
+.project_card>img{
+  object-fit: contain;
+  max-height: 400px;
+}
+.project_details_text{
+  font-size: 1.2em;
+  padding: 10px;
+  color: whitesmoke;
+}
+.project__links{
+  text-align: center;
+  padding: 10px;
+  font-size: 2em;
+}
+/* Ending displaying projects part */
 
 /*The below part is for making it mobile responsive*/
 
