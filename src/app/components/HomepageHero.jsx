@@ -1,34 +1,29 @@
 import React from "react";
+import styles from "../css/HomepageHero.module.css";
+import MagnifyingGlassCursor from "./MagnifyingGlassCursor";
 
 const HomepageHero = () => {
   return (
     <div>
-      <div className="Outer-homepage">
-        <div className="Homepage">
-          <div className="Home-page-name">
-            <span id="Letter-S">S</span>
-            <span id="Letter-a">a</span>
-            <span id="Letter-k">k</span>
-            <span id="Letter-i">i</span>
-            <span id="Letter-b">b</span>
+      <div className={styles.Outer_homepage}>
+        <div className={styles.Homepage}>
+          <div className={styles.Home_page_name}>
+            <span id="Letter_S">S</span>
+            <span id="Letter_a">a</span>
+            <span id="Letter_k">k</span>
+            <span id="Letter_i">i</span>
+            <span id="Letter_b">b</span>
             Ahamed Shahon
           </div>
-          <div id="personal-description">Developer & Designer </div>
+          <div id={styles.personal_description}>Developer & Designer </div>
+          <MagnifyingGlassCursor></MagnifyingGlassCursor>
         </div>
       </div>
-      <div className="flex flex-wrap justify-center space-between items-center">
-        <button className="w-20 text-sky-500 rounded-full border-2 border-sky-500 px-4 py-2 mt-4 mr-2 ml-2 text-lg font-medium duration-500 ease-out outline-none flex-grow ">
-          Works
-        </button>
-        <button className="w-20 text-sky-500 rounded-full border-2 border-sky-500 px-4 py-2 mt-4 mr-2 ml-2 text-lg font-medium duration-500 ease-out outline-none flex-grow ">
-          Skills
-        </button>
-        <button className="w-20 text-sky-500 rounded-full border-2 border-sky-500 px-4 py-2 mt-4 mr-2 ml-2 text-lg font-medium duration-500 ease-out outline-none flex-grow ">
-          Blogs
-        </button>
-        <button className="w-20 text-sky-500 rounded-full border-2 border-sky-500 px-4 py-2 mt-4 mr-2 ml-2 text-lg font-medium duration-500 ease-out outline-none flex-grow ">
-          Resume
-        </button>
+      <div className={styles.Grp_Button}>
+        <button>Works</button>
+        <button>Skills</button>
+        <button>Blogs</button>
+        <button>Resume</button>
       </div>
     </div>
   );

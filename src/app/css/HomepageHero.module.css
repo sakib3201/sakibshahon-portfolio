@@ -1,25 +1,15 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-body {
-  background-color: rgb(29, 29, 29);
-  cursor: none;
-  margin: 10px;
-}
-
-.Outer-homepage {
+.Outer_homepage {
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: none;
 }
 
-.Main-menu:hover {
+.Main_menu:hover {
   cursor: none;
 }
 
-.Home-page-name {
+.Home_page_name {
   font-size: 9em;
   color: #3cc1c9ff;
   justify-content: center;
@@ -30,12 +20,11 @@ body {
   max-width: 100%;
   cursor: none;
   text-shadow: 2px 2px 2px crimson;
-  font-family:'Cinzel Decorative','Times New Roman', Times, serif;
+  font-family: "Cinzel Decorative", "Times New Roman", Times, serif;
   opacity: 1;
 }
 
-
-#personal-description {
+#personal_description {
   font-size: 2em;
   color: lightyellow;
   text-align: center;
@@ -47,7 +36,7 @@ body {
   opacity: 0.75;
 }
 
-.Grp-Button {
+.Grp_Button {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -55,7 +44,7 @@ body {
   justify-content: center;
 }
 
-.Grp-Button Button {
+.Grp_Button Button {
   width: 20%;
   color: #3cc1c9ff;
   background: none;
@@ -66,13 +55,13 @@ body {
   margin-right: 1em;
   font-size: 1.2em;
   transition-delay: 1s;
-  transition: .5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   outline-style: none;
   flex-grow: 1;
   border-radius: 25px;
 }
 
-.Grp-Button Button:hover {
+.Grp_Button Button:hover {
   border-color: tomato;
   color: tomato;
   box-shadow: 0 0.5em 0.5em -0.5em;
@@ -80,7 +69,7 @@ body {
   transition-timing-function: ease-out;
   cursor: pointer;
 }
-.Grp-Button Button:focus {
+.Grp_Button Button:focus {
   border-color: tomato;
   color: tomato;
   box-shadow: 0 0.5em 0.5em -0.5em;
@@ -105,7 +94,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  
+
   width: 15px;
   height: 5px;
   background-color: slategray;
@@ -115,62 +104,61 @@ body {
   transform: translateX(100%) rotate(135deg);
 }
 
-.Home-page-name:hover ~ #cursor {
+.Home_page_name:hover ~ #cursor {
   transform: scale(10);
   transition-timing-function: ease;
   border-radius: 50%;
 }
 
-#Home-page-title:hover ~ #cursor {
+#Home_page_title:hover ~ #cursor {
   transition-timing-function: ease;
   transform: scale(2);
   border-color: ivory;
   background: ivory;
   mix-blend-mode: exclusion;
 }
-#Home-page-title:hover {
+#Home_page_title:hover {
   opacity: 1;
 }
-#personal-description:hover {
+#personal_description:hover {
   opacity: 1;
 }
 
-#personal-description:hover ~ #cursor {
+#personal_description:hover ~ #cursor {
   transform: scale(5);
   transition-timing-function: ease;
-  
 }
 /* Experimental part */
 
 /* Displaying Projects part */
-#project-heading-text{
+#project_heading_text {
   color: bisque;
   font-size: 2em;
   text-align: center;
   margin: 20px;
 }
-.project-container{
+.project_container {
   display: flex;
   justify-content: space-around;
   padding: 10px;
 }
-.project_card{
+.project_card {
   display: flex;
   flex-direction: column;
   width: 30%;
   border: 3px solid #3cc1c9ff;
   border-radius: 5px;
 }
-.project_card>img{
+.project_card > img {
   object-fit: contain;
   max-height: 400px;
 }
-.project_details_text{
+.project_details_text {
   font-size: 1.2em;
   padding: 10px;
   color: whitesmoke;
 }
-.project__links{
+.project__links {
   text-align: center;
   padding: 10px;
   font-size: 2em;
@@ -181,7 +169,7 @@ body {
 
 /*768 px is the typical size of tabs*/
 @media screen and (max-width: 800px) {
-  .Home-page-name {
+  .Home_page_name {
     font-size: 7em;
     max-width: 100%;
   }
@@ -192,12 +180,12 @@ body {
 
 /* 600 px is about the size of lagrge phones*/
 @media screen and (max-width: 600px) {
-  .Home-page-name {
+  .Home_page_name {
     font-size: 4em;
     max-width: 100%;
   }
 
-  #Home-page-title {
+  #Home_page_title {
     letter-spacing: 0.2em;
     max-width: 100%;
   }
@@ -206,7 +194,7 @@ body {
     display: none;
   }
 
-  .Grp-Button Button {
+  .Grp_Button Button {
     margin-top: 15px;
     margin-bottom: 5px;
     padding: 5px;
