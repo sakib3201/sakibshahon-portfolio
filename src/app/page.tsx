@@ -6,7 +6,7 @@ import LegacyNavbar from "../app/components/LegacyNavbar"
 export default function Home() {
   return (
     <main>
-      <NavBar></NavBar>
+      <LegacyNavbar></LegacyNavbar>
       <HomepageHero></HomepageHero>
     </main>
   );

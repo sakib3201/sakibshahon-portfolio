@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../css/HomepageHero.module.css";
+import styles from "../styles/HomepageHero.module.css";
 import MagnifyingGlassCursor from "./MagnifyingGlassCursor";
 
 const HomepageHero = () => {

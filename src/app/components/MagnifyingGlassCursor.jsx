@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useEffect } from "react";
-import styles from "../css/HomepageHero.module.css";
+import styles from "../styles/HomepageHero.module.css";
 
 const MagnifyingGlassCursor = () => {
   //code for cursor will go here
