@@ -1,64 +1,39 @@
 /* everything below this is strictly for the navbar*/
 .total_navbar {
   display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
   cursor: pointer;
-  max-width: 10%;
-}
-
-.custom_icon_menu {
-  color: black;
-  text-transform: translateY(10px);
-  padding: 1em;
-  border-radius: 100%;
-  cursor: pointer;
-  display: block;
-  display: flex;
-  background: #3cc1c9ff;
-}
-
-.custom_icon_menu:hover {
-  color: white;
-  background: #3cc1c9ff;
+  max-width: 100%;
 }
 
 .Main_menu {
-  align-self: auto;
-  background: #2e2e2eff;
-  border-radius: 0 5em 5em 0;
+  align-self: center;
   padding: 0.5em;
-  clip-path: ellipse(50% 50% at -50% 50%);
-  background-color: rgb(50, 56, 68);
+  background-color: black;  /* rgb(50, 56, 68);*/
 }
 
-.Main_menu ul {
+.Main_menu_list {
   display: flex;
+  text-decoration: underline;
   list-style: none;
   font-style: none;
   padding: 0;
   margin: 0;
+  color: #3cc1c9ff;
 }
 
-.Main_menu ul li a {
+.Main_menu_link{
   display: flex;
   padding: 0.25em;
   margin: 0.25em;
-  border-radius: 50%;
   transition: background-color 0.3s;
   text-decoration: none;
   color: #3cc1c9ff;
 }
 
-.Main_menu ul li a:hover {
-  background-color: black; /*rgb(50, 56, 68);*/
+.Main_menu_link:hover {
+  transform: scale(1.2);
   color: #3cc1c9ff;
-}
-.Main_menu ul li a:active {
-  background-color: black; /*rgb(50, 56, 68);*/
-  color: #3cc1c9ff;
-}
-.Main_menu ul li a i {
-  opacity: 0;
-  transform: translateX(-10px);
 }
