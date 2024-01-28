@@ -15,7 +15,7 @@ const HomepageHero = () => {
             <span id="Letter_b">b</span>
             Ahamed Shahon
           </div>
-          <div id={styles.personal_description}>Developer & Designer </div>
+          <div id={styles.personal_description}>Software Artisan & Codemancer.<br />Weaving Magic with Logic.</div>
           <MagnifyingGlassCursor></MagnifyingGlassCursor>
         </div>
       </div>
