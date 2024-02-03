@@ -31,7 +31,7 @@ const ServiceSection = () => {
         <div className="flex lg:w-1/3 w-full flex-grow card bg-base-300 rounded-box p-5 hover:shadow-lg hover:shadow-black duration-300 ease-in-out">
           <div className="p-3">
             <h2 className="text-lg font-bold mb-3 text-center font-sans">
-              Data Analytics &amp;amp; Visualization
+              Data Analytics &amp; Visualization
             </h2>
             <h3 className="font-semibold mb-3">
               Untangle Your Data. Unleash Insights.
