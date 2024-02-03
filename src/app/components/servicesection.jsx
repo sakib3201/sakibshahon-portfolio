@@ -58,7 +58,7 @@ const ServiceSection = () => {
         <div className="flex lg:w-1/3 w-full flex-grow card bg-base-300 rounded-box p-5 hover:shadow-lg hover:shadow-black duration-300 ease-in-out">
           <div className="p-3">
             <h2 className="text-lg font-bold mb-3 text-center font-sans">
-              Machine Learning &amp;amp; AI
+              Machine Learning &amp; AI
             </h2>
             <h3 className="font-semibold mb-3">
               Teaching machines to solve problems.
