@@ -13,15 +13,15 @@ const ServiceSection = () => {
               Web Development
             </h2>
             <h3 className="font-semibold mb-2">
-              Build Websites that Captivate , Convert & Delight. With a Focus on
-              Performance & Security.
+              Build Websites that Captivate , Convert &amp; Delight. With a Focus on
+              Performance &amp; Security.
             </h3>
             <ul className="list-disc">
-              <li>Craft pixel-perfect designs with Tailwind & Bootstrap.</li>
-              <li>Orchestrate seamless experiences with React.js & Node.js.</li>
-              <li>Engineer robust back-ends using Laravel & Express.js.</li>
-              <li>Masterfully manage data with MongoDB, MySQL, & SQL.</li>
-              <li>Ensure flawless code collaboration with Git & GitHub.</li>
+              <li>Craft pixel-perfect designs with Tailwind &amp; Bootstrap.</li>
+              <li>Orchestrate seamless experiences with React.js &amp; Node.js.</li>
+              <li>Engineer robust back-ends using Laravel &amp; Express.js.</li>
+              <li>Masterfully manage data with MongoDB, MySQL, &amp; SQL.</li>
+              <li>Ensure flawless code collaboration with Git &amp; GitHub.</li>
             </ul>
           </div>
         </div>
@@ -31,16 +31,16 @@ const ServiceSection = () => {
         <div className="flex lg:w-1/3 w-full flex-grow card bg-base-300 rounded-box p-5 hover:shadow-lg hover:shadow-black duration-300 ease-in-out">
           <div className="p-3">
             <h2 className="text-lg font-bold mb-3 text-center font-sans">
-              Data Analytics &amp; Visualization
+              Data Analytics &amp;amp; Visualization
             </h2>
             <h3 className="font-semibold mb-3">
               Untangle Your Data. Unleash Insights.
             </h3>
             <ul className="list-disc">
-              <li>Craft compelling visuals with Seaborn & Matplotlib.</li>
-              <li>Extract hidden gems using Selenium & Beautiful Soup.</li>
+              <li>Craft compelling visuals with Seaborn &amp; Matplotlib.</li>
+              <li>Extract hidden gems using Selenium &amp; Beautiful Soup.</li>
               <li>
-                Build powerful models with Pandas, Scikit-learn & TensorFlow.
+                Build powerful models with Pandas, Scikit-learn &amp; TensorFlow.
               </li>
               <li>
                 Architect Deep Learning Solutions with CNNs, RNNs, and TensorFlow/PyTorch.
@@ -58,16 +58,16 @@ const ServiceSection = () => {
         <div className="flex lg:w-1/3 w-full flex-grow card bg-base-300 rounded-box p-5 hover:shadow-lg hover:shadow-black duration-300 ease-in-out">
           <div className="p-3">
             <h2 className="text-lg font-bold mb-3 text-center font-sans">
-              Machine Learning &amp; AI
+              Machine Learning &amp;amp; AI
             </h2>
             <h3 className="font-semibold mb-3">
               Teaching machines to solve problems.
             </h3>
             <ul className="list-disc">
-              <li>Predict trends & outcomes with accuracy using Prophet, ARIMA, & LSTMs. Drive smart business decisions.</li>
-              <li>Tackle complex challenges with cutting-edge frameworks like PyTorch & Keras.</li>
-              <li>Build captivating user experiences with TensorFlow & scikit-learn recommendations. Boost engagement & revenue</li>
-              <li>Ensure seamless model deployment with CI/CD pipelines & Docker containers. Optimize scalability & reliability.</li>
+              <li>Predict trends &amp; outcomes with accuracy using Prophet, ARIMA, &amp; LSTMs. Drive smart business decisions.</li>
+              <li>Tackle complex challenges with cutting-edge frameworks like PyTorch &amp; Keras.</li>
+              <li>Build captivating user experiences with TensorFlow &amp; scikit-learn recommendations. Boost engagement &amp; revenue</li>
+              <li>Ensure seamless model deployment with CI/CD pipelines &amp; Docker containers. Optimize scalability &amp; reliability.</li>
             </ul>
           </div>
         </div>
