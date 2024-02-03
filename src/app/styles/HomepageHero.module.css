@@ -44,11 +44,12 @@
   justify-content: center;
 }
 
-.Grp_Button Button {
+.Grp_Button a {
   width: 20%;
   color: #3cc1c9ff;
   background: none;
   border: 2px ridge #3cc1c9ff;
+  text-align: center;
   padding: 0.5em 0.5em;
   margin-top: 1.5em;
   margin-left: 1em;
@@ -61,7 +62,7 @@
   border-radius: 25px;
 }
 
-.Grp_Button Button:hover {
+.Grp_Button a:hover {
   border-color: tomato;
   color: tomato;
   box-shadow: 0 0.5em 0.5em -0.5em;
@@ -69,7 +70,7 @@
   transition-timing-function: ease-out;
   cursor: pointer;
 }
-.Grp_Button Button:focus {
+.Grp_Button a:focus {
   border-color: tomato;
   color: tomato;
   box-shadow: 0 0.5em 0.5em -0.5em;
@@ -194,7 +195,7 @@
     display: none;
   }
 
-  .Grp_Button Button {
+  .Grp_Button a {
     margin-top: 15px;
     margin-bottom: 5px;
     padding: 5px;

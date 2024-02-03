@@ -20,10 +20,10 @@ const HomepageHero = () => {
         </div>
       </div>
       <div className={styles.Grp_Button}>
-        <button>Works</button>
-        <button>Skills</button>
-        <button>Blogs</button>
-        <button>Resume</button>
+        <a href="#Projects"><button>Works</button></a>
+        <a href="#Skills"><button>Skills</button></a>
+        <a href="#Blogs"><button>Blogs</button></a>
+        <a href="/files/Sakib_Ahamed-Shahon_Resume.pdf" download><button>Resume</button></a>
       </div>
     </div>
   );
