@@ -5,7 +5,6 @@ const Footer = () => {
     <footer className="footer items-center p-4 bg-primary text-neutral-content">
       <aside className="items-center grid-flow-col">
         <p>
-          {" "}
           Copyright by Sakib Ahamed Shahon&copy;, 2024 - All rights reserved
         </p>
       </aside>
