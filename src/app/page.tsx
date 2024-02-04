@@ -4,6 +4,7 @@ import ProjectSlider from "../app/components/ProjectSlider";
 import ServiceSection from "../app/components/ServiceSection";
 import Footer from "../app/components/Footer";
 import HomepageTimeLine from "../app/components/HomepageTimeLine";
+import HomepageContactMe from "../app/components/HomepageContactMe"; 
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <ProjectSlider></ProjectSlider>
       <ServiceSection></ServiceSection>
       <HomepageTimeLine></HomepageTimeLine>
+      <HomepageContactMe></HomepageContactMe>
       <Footer></Footer>
     </main>
   );
