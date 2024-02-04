@@ -5,7 +5,7 @@ const HomepageContactMe = () => {
   return (
     <div>
       <div id="Projects" className="flex justify-center items-center mt-10 mb-5 text-5xl font-montseratt font-bold">
-        Let's Connect!
+        Let&apos;s Connect!
       </div>
       <div className="flex justify-center">
         <div className="flex self-center flex-col md:flex-row shadow-lg rounded-lg p-4 w-3/5 bg-primary m-2">
