@@ -11,10 +11,10 @@ const HomepageTimeLine = () => {
       </div>
       <div className="text-center mt-10 mb-10">
         <blockquote className="italic text-lg font-medium text-slate-500">
-          "Programming has been an amazing journey for me. It's not just about
+          &quote;Programming has been an amazing journey for me. It&apos;s not just about
           writing code, but a passion that burns bright in my soul. Each line of
-          code I write is a step towards turning ideas into reality. It's a
-          constant learning process that never ceases to amaze me."
+          code I write is a step towards turning ideas into reality. It&apos;s a
+          constant learning process that never ceases to amaze me.&quote;
         </blockquote>
       </div>
 
@@ -234,7 +234,7 @@ const HomepageTimeLine = () => {
               experience in working with legacy code, version control, and
               deployment. <br />
               Later in the year in late november, I joined the amazing team at
-              'Incevio' as a full-time Web developer intern.
+              &apos;Incevio&apos; as a full-time Web developer intern.
             </p>
           </div>
           <hr />
