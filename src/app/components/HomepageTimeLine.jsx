@@ -11,10 +11,11 @@ const HomepageTimeLine = () => {
       </div>
       <div className="text-center mt-10 mb-10">
         <blockquote className="italic text-lg font-medium text-slate-500">
-          &quote;Programming has been an amazing journey for me. It&apos;s not just about
-          writing code, but a passion that burns bright in my soul. Each line of
-          code I write is a step towards turning ideas into reality. It&apos;s a
-          constant learning process that never ceases to amaze me.&quote;
+          &quote;Programming has been an amazing journey for me. It&apos;s not
+          just about writing code, but a passion that burns bright in my soul.
+          Each line of code I write is a step towards turning ideas into
+          reality. It&apos;s a constant learning process that never ceases to
+          amaze me.&quote;
         </blockquote>
       </div>
 
@@ -67,12 +68,12 @@ const HomepageTimeLine = () => {
             <time className="font-mono italic">2014</time>
             <div className="text-lg font-black">Hello World!!</div>
             <p className="text-justify">
-              I wrote my first "Hello World" in python. It was the first time I
-              wrote a program and saw the output. It was a magical moment for
-              me. I was fascinated by the fact that I could write a few lines of
-              code and make the computer do what I wanted it to do. That was the
-              moment I fell in love with programming. This is where my journey
-              of a lifetime began.
+              I wrote my first &quot;Hello World&quot; in python. It was the
+              first time I wrote a program and saw the output. It was a magical
+              moment for me. I was fascinated by the fact that I could write a
+              few lines of code and make the computer do what I wanted it to do.
+              That was the moment I fell in love with programming. This is where
+              my journey of a lifetime began.
             </p>
           </div>
           <hr />
@@ -127,7 +128,7 @@ const HomepageTimeLine = () => {
           <div className="timeline-end mb-10 bg-base-300 rounded-box p-5 hover:shadow-lg hover:shadow-black hover:scale-110 transition duration-300 ease-in-out">
             <time className="font-mono italic">2016</time>
             <div className="text-lg font-black">
-              Is that programming I "C" ?
+              Is that programming I &apos;C&apos; ?
             </div>
             <p className="text-justify">
               Although I had been writing code for a while, I had never written
