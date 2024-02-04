@@ -11,11 +11,11 @@ const HomepageTimeLine = () => {
       </div>
       <div className="text-center mt-10 mb-10">
         <blockquote className="italic text-lg font-medium text-slate-500">
-          &quote;Programming has been an amazing journey for me. It&apos;s not
+          Programming has been an amazing journey for me. It&apos;s not
           just about writing code, but a passion that burns bright in my soul.
           Each line of code I write is a step towards turning ideas into
           reality. It&apos;s a constant learning process that never ceases to
-          amaze me.&quote;
+          amaze me.
         </blockquote>
       </div>
 
