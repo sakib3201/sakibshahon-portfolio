@@ -5,7 +5,7 @@ const ProjectSlider = () => {
   const projects = [
     {
       imageSrc:
-        "https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg",
+        "/images/ictbjhomepage.png",
       altText: "ICTBJ-2023",
       title: "ICTBJ-2023",
       description: "The official website of Jatiya Kabi Kazi Nazrul Islam University's research conference on Technology, Business, and Justice.",
