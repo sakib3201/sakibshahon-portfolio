@@ -15,7 +15,6 @@
 
 .Main_menu_list {
   display: flex;
-  text-decoration: underline;
   list-style: none;
   font-style: none;
   padding: 0;
@@ -34,5 +33,13 @@
 
 .Main_menu_link:hover {
   transform: scale(1.2);
-  color: #3cc1c9ff;
+  color: #ea580c;
+  transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.Main_menu_link:hover::before {
+  content: "<";
+}
+.Main_menu_link:hover::after {
+  content: "/>";
 }

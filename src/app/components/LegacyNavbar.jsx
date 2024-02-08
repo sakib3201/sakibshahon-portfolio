@@ -9,13 +9,13 @@ const LegacyNavbar = () => {
       <nav className={style.Main_menu}>
         <ul className={style.Main_menu_list}>
           <li className={style.Main_menu_link}>
-            <Link href="/">Home</Link>
+            <Link href="/"> Home </Link>
           </li>
           <li className={style.Main_menu_link}>
-            <Link href="/">Contact</Link>
+            Contact
           </li>
           <li className={style.Main_menu_link}>
-            <Link href="/">Projects</Link>
+            <Link href="/"> Projects </Link>
           </li>
         </ul>
       </nav>

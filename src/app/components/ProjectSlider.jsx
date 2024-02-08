@@ -15,7 +15,7 @@ const ProjectSlider = () => {
       imageSrc: "/images/evotingproject.png",
       altText: "Evoting Project",
       title: "Decentralized Voting App",
-      description: "A block chain based voting app that stores its voting data in the blockchain. Providing exteremely secure tamper free voting system. It has facial recognition for voter authentication",
+      description: "A block chain based voting app that stores its voting data in the blockchain. Providing exteremely secure voting system. It has facial recognition for voter authentication",
       buttonText: "Details",
     },
     {
