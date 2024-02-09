@@ -20,10 +20,10 @@ const ProjectSlider = () => {
     },
     {
       imageSrc:
-        "https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg",
+        "/images/amarshopproject.png",
       altText: "E-commerce website",
       title: "Amar Shop",
-      description: " a website that offers complete solutions for a small to medium-sized shop with features including inventory management, financial report generation & analytics, and customer & sales management.",
+      description: "A website that offers complete solutions for a small to medium-sized shop with features including inventory management, financial report generation & analytics, and customer & sales management.",
       buttonText: "Details",
     },
   ];
