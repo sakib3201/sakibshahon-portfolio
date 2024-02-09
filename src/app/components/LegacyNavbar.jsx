@@ -17,6 +17,9 @@ const LegacyNavbar = () => {
           <li className={style.Main_menu_link}>
             <Link href="/"> Projects </Link>
           </li>
+          <li className={style.Main_menu_link}>
+            <Link href="https://dev.to/sakib3201"> Blog </Link>
+          </li>
         </ul>
       </nav>
     </div>
