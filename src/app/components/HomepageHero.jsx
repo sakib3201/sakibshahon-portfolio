@@ -15,7 +15,7 @@ const HomepageHero = () => {
             <span id="Letter_b">b</span>
             Ahamed Shahon
           </div>
-          <div id={styles.personal_description}>The <span className="text-accent"><b>"CAN DO"</b></span> Software Artisan<br /></div>
+          <div id={styles.personal_description}>The <span className="text-accent"><b>&quot;CAN DO&quot;</b></span> Software Artisan<br /></div>
           <MagnifyingGlassCursor></MagnifyingGlassCursor>
         </div>
       </div>
