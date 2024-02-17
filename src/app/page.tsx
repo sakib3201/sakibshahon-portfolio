@@ -13,7 +13,6 @@ export default function Home() {
       <HomepageHero></HomepageHero>
       <ProjectSlider></ProjectSlider>
       <ServiceSection></ServiceSection>
-      <HomepageTimeLine></HomepageTimeLine>
       <HomepageContactMe></HomepageContactMe>
       <Footer></Footer>
     </main>

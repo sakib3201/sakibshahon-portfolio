@@ -26,7 +26,6 @@ const NavBar = () => {
         <Link href={"/contact"}>Contact me</Link>
       </button>
       </div>
-      
     </nav>
   );
 };

@@ -15,14 +15,14 @@ const HomepageHero = () => {
             <span id="Letter_b">b</span>
             Ahamed Shahon
           </div>
-          <div id={styles.personal_description}>Software Artisan & Codemancer.<br />Weaving Magic with Logic.</div>
+          <div id={styles.personal_description}>The <span className="text-accent"><b>"CAN DO"</b></span> Software Artisan<br /></div>
           <MagnifyingGlassCursor></MagnifyingGlassCursor>
         </div>
       </div>
       <div className={styles.Grp_Button}>
         <a href="#Projects"><button>Works</button></a>
         <a href="#Skills"><button>Skills</button></a>
-        <a href="#Blogs"><button>Blogs</button></a>
+        <a href="https://dev.to/sakib3201" target="_blank"><button>Blogs</button></a>
         <a href="/files/Sakib_Ahamed-Shahon_Resume.pdf" download><button>Resume</button></a>
       </div>
     </div>
