@@ -10,18 +10,18 @@ const ExperienceTimeline = () => {
         Professional Experience
       </div>
       <div className="flex flex-wrap justify-center gap-5">
-        <div className="card w-96 bg-base-100 shadow-xl">
-          <figure>
-            <img
-              src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-              alt="Shoes"
-            />
-          </figure>
-          <div className="card-body">
+        <div className="card w-96 bg-base-300 rounded-box hover:shadow-lg hover:shadow-black duration-300 ease-in-out">
+            <figure className="bg-white min-h-[45vh]">
+                <img
+                    src="/images/incevio_logo.webp"
+                    alt="Incevio Logo"
+                />
+            </figure>
+            <div className="card-body">
             <h2 className="card-title">Full Stack Web Developer <br /> @ Incevio </h2>
             <div className="badge badge-secondary">Working Here!</div>
             <p className="text-justify">
-              Worked as a full stack web developer with focus on the backend. My
+              Working as a full stack web developer with focus on the backend. My
               responsibilities include building and maintaining the backend of
               the website, develop API, integrate third party API such as
               payment gateways and also the frontend. I also work on the
@@ -37,15 +37,15 @@ const ExperienceTimeline = () => {
             </div>
           </div>
         </div>
-        <div className="card w-96 bg-base-100 shadow-xl">
-          <figure>
+        <div className="card w-96 bg-base-300 rounded-box hover:shadow-lg hover:shadow-black duration-300 ease-in-out">
+          <figure className="bg-white min-h-50 min-h-[45vh]">
             <img
-              src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-              alt="Shoes"
+              src="/images/datasapiencelogo-nobg.png"
+              alt="Data Sapience Lab Logo"
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Software engineer @ Data Sapience Lab</h2>
+            <h2 className="card-title">Software engineer <br />@ Data Sapience Lab</h2>
             <p className="text-justify">
               I worked as a software engineer to deliver machine learning and
               data analytics and Visualization solution for clients. I also
