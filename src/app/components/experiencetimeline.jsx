@@ -10,7 +10,7 @@ const ExperienceTimeline = () => {
         Professional Experience
       </div>
       <div className="flex flex-wrap justify-center gap-5">
-        <div className="card w-96 bg-base-300 rounded-box hover:shadow-lg hover:shadow-black duration-300 ease-in-out">
+        <div className="card w-96 lg:w-2/5 bg-base-300 rounded-box hover:shadow-lg hover:shadow-black duration-300 ease-in-out">
             <figure className="bg-white min-h-[45vh]">
                 <img
                     src="/images/incevio_logo.webp"
@@ -18,7 +18,12 @@ const ExperienceTimeline = () => {
                 />
             </figure>
             <div className="card-body">
-            <h2 className="card-title">Full Stack Web Developer <br /> @ Incevio </h2>
+            <div className="card-title justify-between">
+              <h2>Full Stack Web Developer</h2>
+              <h3><span className="text-gray-500">@</span>
+              Incev<span className="text-yellow-500">!</span>o
+              </h3>
+            </div>
             <div className="badge badge-secondary">Working Here!</div>
             <p className="text-justify">
               Working as a full stack web developer with focus on the backend. My
@@ -37,7 +42,7 @@ const ExperienceTimeline = () => {
             </div>
           </div>
         </div>
-        <div className="card w-96 bg-base-300 rounded-box hover:shadow-lg hover:shadow-black duration-300 ease-in-out">
+        <div className="card w-96 lg:w-2/5 bg-base-300 rounded-box hover:shadow-lg hover:shadow-black duration-300 ease-in-out">
           <figure className="bg-white min-h-50 min-h-[45vh]">
             <img
               src="/images/datasapiencelogo-nobg.png"
@@ -45,7 +50,11 @@ const ExperienceTimeline = () => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Software engineer <br />@ Data Sapience Lab</h2>
+            <div className="card-title justify-between">
+              <h2>Software engineer</h2>
+              <h3><span className="text-gray-500">@</span>
+              <span className="font-cursive">Data Sapience Lab</span></h3>
+            </div>
             <p className="text-justify">
               I worked as a software engineer to deliver machine learning and
               data analytics and Visualization solution for clients. I also
