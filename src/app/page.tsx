@@ -4,7 +4,7 @@ import ProjectSlider from "../app/components/ProjectSlider";
 import ServiceSection from "../app/components/ServiceSection";
 import Footer from "../app/components/Footer";
 import HomepageContactMe from "../app/components/HomepageContactMe"; 
-import ExperienceTimeline from "../app/components/ExperienceTimeline";
+import ExperienceTimeline from "./components/ExperienceTimeline";
 
 export default function Home() {
   return (
