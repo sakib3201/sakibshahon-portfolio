@@ -8,7 +8,7 @@ const ProjectSlider = () => {
       altText: "ICTBJ-2023",
       title: "ICTBJ-2023",
       description: "The official website of Jatiya Kabi Kazi Nazrul Islam University's research conference on Technology, Business, and Justice.",
-      liveLink: "",
+      liveLink: "https://ictbj.jkkniu.edu.bd/",
       youtubeLink: "",
       githubLink: "",
     },
