@@ -15,7 +15,7 @@ const LegacyNavbar = () => {
             Contact
           </li>
           <li className={style.Main_menu_link}>
-            <Link href="/"> Projects </Link>
+            <Link href="/projects"> Projects </Link>
           </li>
           <li className={style.Main_menu_link}>
             <Link href="https://dev.to/sakib3201"> Blog </Link>

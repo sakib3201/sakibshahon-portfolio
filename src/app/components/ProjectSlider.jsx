@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCards from "./projectcard";
+import Link from "next/link";
 
 const ProjectSlider = () => {
   const projects = [
@@ -44,9 +45,11 @@ const ProjectSlider = () => {
       </div>
 
       <div className="flex justify-center items-center m-5 mb-8">
-        <button className="btn btn-ghost btn-outline btn-lg rounded-full shadow-md hover:border-base-100 hover:shadow-black hover:scale-110 transition duration-300 ease-in-out">
-          View all Projects
-        </button>
+        <Link href="/projects">
+          <button className="btn btn-ghost btn-outline btn-lg rounded-full shadow-md hover:border-base-100 hover:shadow-black hover:scale-110 transition duration-300 ease-in-out">
+            View all Projects
+          </button>
+        </Link>
       </div>
     </div>
   );

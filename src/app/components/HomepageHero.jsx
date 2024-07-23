@@ -13,7 +13,19 @@ const HomepageHero = () => {
             <span id="Letter_k">k</span>
             <span id="Letter_i">i</span>
             <span id="Letter_b">b</span>
-            Ahamed Shahon
+            <span id="Letter_A">A</span>
+            <span id="Letter_h">h</span>
+            <span id="Letter_a2">a</span>
+            <span id="Letter_m">m</span>
+            <span id="Letter_e">e</span>
+            <span id="Letter_d">d</span>
+            <span id="Letter_Space"> </span>
+            <span id="Letter_S2">S</span>
+            <span id="Letter_h2">h</span>
+            <span id="Letter_a3">a</span>
+            <span id="Letter_h3">h</span>
+            <span id="Letter_o">o</span>
+            <span id="Letter_n">n</span>
           </div>
           <div id={styles.personal_description}>The <span className="text-accent"><b>&quot;CAN DO&quot;</b></span> Software Artisan<br /></div>
           <MagnifyingGlassCursor></MagnifyingGlassCursor>
