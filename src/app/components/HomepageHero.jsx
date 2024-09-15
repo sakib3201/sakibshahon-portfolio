@@ -35,7 +35,7 @@ const HomepageHero = () => {
         <a href="#Projects"><button>Works</button></a>
         <a href="#Skills"><button>Skills</button></a>
         <a href="https://dev.to/sakib3201" target="_blank"><button>Blogs</button></a>
-        <a href="/files/Sakib_Ahamed-Shahon_Resume.pdf" download><button>Resume</button></a>
+        <a href="/files/Sakib-Ahamed-Shahon-Resume.pdf" target="_blank" rel="noopener noreferrer"><button>Resume</button></a>
       </div>
     </div>
   );

@@ -17,7 +17,12 @@ const HomepageContactMe = () => {
             />
           </div>
           <div className="md:w-2/3 mt-4 md:mt-0 md:ml-4 flex flex-col justify-center">
-            <form>
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="06898dee-aec1-4979-a6a1-194c5dc8d41d"></input>
+            <input type="hidden" name="subject" value="Message from your portfolio"></input>
+            <input type="hidden" name="from_name" value="sakibshahon.netlify.app"></input>
+
               <div className="mb-4">
                 <label
                   htmlFor="email"
@@ -28,6 +33,7 @@ const HomepageContactMe = () => {
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   className="w-full px-3 py-2 bg-slate-600 border rounded-lg focus:outline-none focus:border-secondary"
                 />
               </div>
@@ -40,6 +46,7 @@ const HomepageContactMe = () => {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   className="w-full bg-slate-600 px-3 py-2 border rounded-lg focus:outline-none focus:border-secondary"
                   rows="5"
                 ></textarea>
