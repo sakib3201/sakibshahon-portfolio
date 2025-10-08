@@ -24,7 +24,6 @@ const ExperienceTimeline = () => {
               Incev<span className="text-yellow-500">!</span>o
               </h3>
             </div>
-            <div className="badge badge-secondary">Working Here!</div>
             <p className="text-justify">
               Working as a full stack web developer with focus on the backend. My
               responsibilities include building and maintaining the backend of
@@ -39,6 +38,32 @@ const ExperienceTimeline = () => {
                 <div className="badge badge-outline">Bootstrap</div>
                 <div className="badge badge-outline">Ajax</div>
                 <div className="badge badge-outline">Jquery</div>
+            </div>
+          </div>
+        </div>
+        <div className="card w-96 lg:w-2/5 bg-base-300 rounded-box hover:shadow-lg hover:shadow-black duration-300 ease-in-out">
+            <figure className="bg-white min-h-[45vh]">
+                <img
+                    src="https://wpdeveloper.com/wp-content/uploads/2022/02/wpdeveloper-logo-212x48.png"
+                    alt="Arraytics Logo"
+                />
+            </figure>
+            <div className="card-body">
+            <div className="card-title justify-between">
+              <h2>Software Engineer</h2>
+              <h3><span className="text-gray-500">@</span>
+              Arraytics
+              </h3>
+            </div>
+            <div className="badge badge-secondary">Working Here!</div>
+            <p className="text-justify">
+             I work as a software engineer focused on wordpress plugin development . I have worked on wordpress plugins eventin, booktics and timetics with react based frontend and full php based wordpress backend. I have worked with developing full plugins from ground up like booktics to adding third party integrations like google calendar and outlook calendar integrations in booktics and timetics. Currently I am working on delivering AI integrated features for the plugins.
+            </p>
+            <div className="card-actions justify-end">
+                <div className="badge badge-outline">Wordpress</div>
+                <div className="badge badge-outline">PHP</div>
+                <div className="badge badge-outline">React.js</div>
+                <div className="badge badge-outline">MySQL</div>
             </div>
           </div>
         </div>
