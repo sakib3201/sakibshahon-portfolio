@@ -44,7 +44,7 @@ const ExperienceTimeline = () => {
         <div className="card w-96 lg:w-2/5 bg-base-300 rounded-box hover:shadow-lg hover:shadow-black duration-300 ease-in-out">
             <figure className="bg-white min-h-[45vh]">
                 <img
-                    src="https://wpdeveloper.com/wp-content/uploads/2022/02/wpdeveloper-logo-212x48.png"
+                    src="/images/arraytics-logo.webp"
                     alt="Arraytics Logo"
                 />
             </figure>
