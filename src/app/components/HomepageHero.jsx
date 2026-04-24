@@ -49,6 +49,7 @@ const HomepageHero = () => {
   const sectionRef = useRef(null);
   const timeRef = useRef(0);
   const reducedMotionRef = useRef(false);
+  const visibleRef = useRef(true);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -97,7 +98,18 @@ const HomepageHero = () => {
     resize();
     window.addEventListener("resize", resize);
 
+    const visObserver = new IntersectionObserver(
+      ([entry]) => { visibleRef.current = entry.isIntersecting; },
+      { threshold: 0 }
+    );
+    visObserver.observe(section);
+
     const loop = () => {
+      if (!visibleRef.current) {
+        rafRef.current = requestAnimationFrame(loop);
+        return;
+      }
+
       const { width, height } = canvas;
       ctx.clearRect(0, 0, width, height);
       const mouse = mouseRef.current;
@@ -164,6 +176,7 @@ const HomepageHero = () => {
 
     return () => {
       window.removeEventListener("resize", resize);
+      visObserver.disconnect();
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
   }, [initParticles]);
@@ -263,7 +276,7 @@ const HomepageHero = () => {
               aria-label={tagline}
             >
               {chars.map((char, i) => (
-                <motion.span key={i} variants={charVariants}>
+                <motion.span key={i} variants={charVariants} aria-hidden="true">
                   {char === " " ? "\u00A0" : char}
                 </motion.span>
               ))}

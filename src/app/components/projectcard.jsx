@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, index = 0 }) => {
   const {
     title,
     description,
@@ -17,7 +17,7 @@ const ProjectCard = ({ project }) => {
       initial={{ opacity: 0, y: 16 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+      transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1], delay: index * 0.1 }}
       className="bg-surface-container-low border border-outline-variant p-md group hover:border-primary-container transition-colors duration-200 flex flex-col gap-sm"
     >
       <div className="border-b border-outline-variant pb-sm">
@@ -46,9 +46,10 @@ const ProjectCard = ({ project }) => {
             href={liveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-data-mono text-[12px] text-primary-container hover:underline uppercase tracking-widest"
+            className="font-data-mono text-[12px] text-primary-container hover:underline uppercase tracking-widest inline-flex items-center gap-1 group/link"
           >
-            LIVE →
+            LIVE
+            <span className="inline-block group-hover/link:translate-x-0.5 transition-transform duration-150">→</span>
           </a>
         )}
         {githubLink && (
@@ -56,9 +57,10 @@ const ProjectCard = ({ project }) => {
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-data-mono text-[12px] text-primary-container hover:underline uppercase tracking-widest"
+            className="font-data-mono text-[12px] text-primary-container hover:underline uppercase tracking-widest inline-flex items-center gap-1 group/link"
           >
-            GITHUB →
+            GITHUB
+            <span className="inline-block group-hover/link:translate-x-0.5 transition-transform duration-150">→</span>
           </a>
         )}
         {youtubeLink && (
@@ -66,9 +68,10 @@ const ProjectCard = ({ project }) => {
             href={youtubeLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-data-mono text-[12px] text-primary-container hover:underline uppercase tracking-widest"
+            className="font-data-mono text-[12px] text-primary-container hover:underline uppercase tracking-widest inline-flex items-center gap-1 group/link"
           >
-            DEMO →
+            DEMO
+            <span className="inline-block group-hover/link:translate-x-0.5 transition-transform duration-150">→</span>
           </a>
         )}
       </div>

@@ -5,7 +5,8 @@ const Footer = () => {
     <footer className="w-full bg-surface-container-lowest border-t border-outline-variant mt-xl">
       <div className="flex flex-col md:flex-row justify-between items-center w-full px-6 py-md gap-md max-w-7xl mx-auto">
         <div className="text-primary-container font-data-mono text-label-caps uppercase tracking-widest">
-          {"\u00A9 2026 SAKIB AHAMMED SHAHON // SYSTEM_STABLE"}
+          {"\u00A9 2026 SAKIB AHAMMED SHAHON "}
+          <span className="animate-pulse-live">{"// SYSTEM_STABLE"}</span>
         </div>
         <div className="flex gap-md">
           <a

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import GlitchLabel from "./GlitchLabel";
 
 const experiences = [
   {
@@ -30,9 +31,9 @@ const ExperienceTimeline = () => {
   return (
     <section className="max-w-7xl mx-auto px-6 py-lg">
       <div className="mb-lg">
-        <span className="font-data-mono text-label-caps text-primary-container uppercase tracking-widest block mb-xs animate-glitch">
+        <GlitchLabel className="font-data-mono text-label-caps text-primary-container uppercase tracking-widest block mb-xs">
           {"// EXPERIENCE"}
-        </span>
+        </GlitchLabel>
         <h2 className="font-headline-lg text-headline-lg text-on-surface border-b border-outline-variant pb-sm">
           The Ledger
         </h2>
@@ -45,7 +46,7 @@ const ExperienceTimeline = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1], delay: i * 0.1 }}
-            className="group flex flex-col md:flex-row justify-between items-start md:items-center py-sm border-b border-outline-variant hover:bg-surface-container-low transition-colors duration-200 px-sm -mx-sm cursor-pointer"
+            className="group flex flex-col md:flex-row justify-between items-start md:items-center py-sm border-b border-outline-variant hover:bg-surface-container-low transition-colors duration-200 px-sm -mx-sm"
           >
             <div>
               <div className="flex items-center gap-3 mb-1">
@@ -53,7 +54,7 @@ const ExperienceTimeline = () => {
                   {exp.role}
                 </h3>
                 {exp.current && (
-                  <span className="font-data-mono text-[10px] text-primary-container border border-primary-container px-2 py-0.5 uppercase">
+                  <span className="font-data-mono text-[10px] text-primary-container border border-primary-container px-2 py-0.5 uppercase animate-pulse-live">
                     CURRENT
                   </span>
                 )}
@@ -74,7 +75,7 @@ const ExperienceTimeline = () => {
                 ))}
               </div>
               <svg
-                className="text-outline group-hover:text-primary-container transition-colors"
+                className="text-outline group-hover:text-primary-container group-hover:translate-x-1 transition-all duration-200"
                 width="20"
                 height="20"
                 viewBox="0 0 24 24"

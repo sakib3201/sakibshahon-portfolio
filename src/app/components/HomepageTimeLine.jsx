@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import GlitchLabel from "./GlitchLabel";
 
 const milestones = [
   {
@@ -40,8 +41,18 @@ const milestones = [
   },
   {
     year: "2024",
-    title: "Learner of a Lifetime",
-    text: "Still learning, still writing code, still solving problems. Exploring cloud computing, code architecture, and system design. Growing the Mymensingh programmers community.",
+    title: "Scaling for Thousands",
+    text: "Worked on building tools for e-commerce, contributing to a multivendor product used at scale. Learned performance optimization, test coverage for resilient systems, and what it takes to ship software that thousands of users depend on.",
+  },
+  {
+    year: "2025",
+    title: "Products People Love",
+    text: "Joined Arraytics and worked on products used by thousands: WordPress plugins like Eventin, and building Booktics from scratch. Rebuilt legacy codebases with careful migration and backward compatibility. Built and maintained AI infrastructure, and contributed to SaaS products like Timetics.ai.",
+  },
+  {
+    year: "2026",
+    title: "Directing the Fleet",
+    text: "Skilled in directing AI fleets: orchestrating multiple agents to reason, plan, and execute together. Proficient in AI, but still rapidly learning, still growing, and still looking to solve more problems every day. The best work is ahead.",
   },
 ];
 
@@ -49,9 +60,9 @@ const HomepageTimeLine = () => {
   return (
     <section className="max-w-7xl mx-auto px-6 py-lg">
       <div className="mb-lg">
-        <span className="font-data-mono text-label-caps text-primary-container uppercase tracking-widest block mb-xs animate-glitch">
+        <GlitchLabel className="font-data-mono text-label-caps text-primary-container uppercase tracking-widest block mb-xs">
           {"// TIMELINE"}
-        </span>
+        </GlitchLabel>
         <h2 className="font-headline-lg text-headline-lg text-on-surface mb-md">
           The Journey
         </h2>

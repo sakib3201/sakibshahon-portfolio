@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import GlitchLabel from "./GlitchLabel";
 
 const expertiseCards = [
   {
@@ -30,10 +31,10 @@ const ServiceSection = () => {
   return (
     <section className="max-w-7xl mx-auto px-6 py-lg">
       <div className="mb-lg">
-        <span className="font-data-mono text-label-caps text-primary-container uppercase tracking-widest block mb-xs animate-glitch">
+        <GlitchLabel className="font-data-mono text-label-caps text-primary-container uppercase tracking-widest block mb-xs">
           {"// SKILLS"}
-        </span>
-        <h2 className="font-headline-lg text-headline-lg text-on-surface">
+        </GlitchLabel>
+        <h2 className="font-headline-lg text-headline-lg text-on-surface border-b border-outline-variant pb-sm">
           Expertise
         </h2>
       </div>
@@ -45,7 +46,7 @@ const ServiceSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1], delay: i * 0.1 }}
-            className="bg-surface-container-low border border-outline-variant p-md group hover:border-primary-container transition-colors duration-200 relative"
+            className="bg-surface-container-low border border-outline-variant p-md group hover:border-primary-container transition-colors duration-200"
           >
             <div className="border-b border-outline-variant pb-sm mb-md">
               <h3 className="font-data-mono text-data-mono text-primary-container uppercase tracking-widest">

@@ -5,6 +5,7 @@ import ExperienceTimeline from "./components/ExperienceTimeline";
 import ProjectCard from "./components/projectcard";
 import HomepageContactMe from "./components/HomepageContactMe";
 import Footer from "./components/Footer";
+import GlitchLabel from "./components/GlitchLabel";
 
 const featuredProjects = [
   {
@@ -45,16 +46,16 @@ export default function Home() {
       <ExperienceTimeline />
       <section className="max-w-7xl mx-auto px-6 py-lg">
         <div className="mb-lg">
-          <span className="font-data-mono text-label-caps text-primary-container uppercase tracking-widest block mb-xs animate-glitch">
+          <GlitchLabel className="font-data-mono text-label-caps text-primary-container uppercase tracking-widest block mb-xs">
             {"// FEATURED WORK"}
-          </span>
+          </GlitchLabel>
           <h2 className="font-headline-lg text-headline-lg text-on-surface border-b border-outline-variant pb-sm">
             Projects
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-md">
-          {featuredProjects.map((project) => (
-            <ProjectCard key={project.title} project={project} />
+          {featuredProjects.map((project, i) => (
+            <ProjectCard key={project.title} project={project} index={i} />
           ))}
         </div>
       </section>

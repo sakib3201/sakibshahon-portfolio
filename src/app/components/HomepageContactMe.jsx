@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useRef } from "react";
+import GlitchLabel from "./GlitchLabel";
 
 const STATUS = { IDLE: "idle", SUBMITTING: "submitting", SUCCESS: "success", ERROR: "error" };
 
@@ -9,6 +10,7 @@ const HomepageContactMe = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (status === STATUS.SUBMITTING) return;
     setStatus(STATUS.SUBMITTING);
 
     try {
@@ -32,15 +34,14 @@ const HomepageContactMe = () => {
     <section className="max-w-7xl mx-auto px-6 py-lg">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-md">
         <div className="md:col-span-5 flex flex-col gap-md">
-          <span className="font-data-mono text-label-caps text-primary-container uppercase tracking-widest animate-glitch">
-            {"// INITIATE CONNECTION"}
-          </span>
-          <h2 className="font-display-poetry text-display-poetry text-primary-fixed">
-            Transmit Request
+          <GlitchLabel className="font-data-mono text-label-caps text-primary-container uppercase tracking-widest">
+            {"// CONTACT"}
+          </GlitchLabel>
+          <h2 className="font-display-poetry text-display-poetry text-on-surface">
+            Transmit
           </h2>
           <p className="font-body-md text-body-md text-on-surface-variant max-w-[70ch]">
-            Open channels for project collaboration, architectural consultation,
-            or just to say hello.
+            Project collaboration, consulting, and engineering inquiries.
           </p>
         </div>
         <div className="md:col-span-7 bg-surface-container-high border border-outline-variant p-md">
@@ -60,13 +61,14 @@ const HomepageContactMe = () => {
               <input type="hidden" name="access_key" value="06898dee-aec1-4979-a6a1-194c5dc8d41d" />
               <input type="hidden" name="subject" value="Message from your portfolio" />
               <input type="hidden" name="from_name" value="sakibshahon.netlify.app" />
+              <input type="checkbox" name="botcheck" className="hidden" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
 
               <div className="flex flex-col gap-xs">
                 <label
                   htmlFor="id_name"
                   className="font-data-mono text-data-mono text-primary-container uppercase"
                 >
-                  IDENTIFIER [NAME]
+                  SENDER [NAME]
                 </label>
                 <input
                   type="text"
@@ -74,7 +76,7 @@ const HomepageContactMe = () => {
                   name="name"
                   required
                   autoComplete="name"
-                  placeholder="Enter identification string..."
+                  placeholder="Full name"
                   className="bg-surface-container-lowest border-0 border-b border-outline-variant text-on-surface font-body-md focus:ring-0 focus:border-primary-container transition-colors duration-200 py-xs px-0 placeholder:text-on-surface-variant/30 outline-none"
                 />
               </div>
@@ -84,7 +86,7 @@ const HomepageContactMe = () => {
                   htmlFor="id_email"
                   className="font-data-mono text-data-mono text-primary-container uppercase"
                 >
-                  ROUTING [EMAIL]
+                  ROUTE [EMAIL]
                 </label>
                 <input
                   type="email"
@@ -92,7 +94,7 @@ const HomepageContactMe = () => {
                   name="email"
                   required
                   autoComplete="email"
-                  placeholder="Enter routing address..."
+                  placeholder="Email address"
                   className="bg-surface-container-lowest border-0 border-b border-outline-variant text-on-surface font-body-md focus:ring-0 focus:border-primary-container transition-colors duration-200 py-xs px-0 placeholder:text-on-surface-variant/30 outline-none"
                 />
               </div>
@@ -108,14 +110,14 @@ const HomepageContactMe = () => {
                   id="id_payload"
                   name="message"
                   required
-                  placeholder="Enter transmission data..."
+                  placeholder="Describe your project or inquiry..."
                   rows={4}
                   className="bg-surface-container-lowest border-0 border-b border-outline-variant text-on-surface font-body-md focus:ring-0 focus:border-primary-container transition-colors duration-200 py-xs px-0 placeholder:text-on-surface-variant/30 outline-none resize-y"
                 />
               </div>
 
               {status === STATUS.ERROR && (
-                <div className="font-data-mono text-[12px] text-error border-b border-error pb-xs">
+                <div className="font-data-mono text-[12px] text-error border-b border-error pb-xs" role="alert">
                   TRANSMISSION_FAILED // Retry in a moment
                 </div>
               )}
@@ -123,7 +125,7 @@ const HomepageContactMe = () => {
               <button
                 type="submit"
                 disabled={status === STATUS.SUBMITTING}
-                className="bg-primary-container text-on-primary-container font-data-mono text-label-caps uppercase px-md py-sm rounded-none w-fit hover:bg-primary-fixed transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="bg-primary-container text-on-primary font-data-mono text-label-caps uppercase px-md py-sm rounded-none w-fit hover:bg-primary-fixed transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {status === STATUS.SUBMITTING ? "TRANSMITTING..." : "EXECUTE TRANSMISSION"}
               </button>
