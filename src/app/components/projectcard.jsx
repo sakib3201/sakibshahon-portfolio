@@ -1,39 +1,82 @@
+"use client";
 import React from "react";
-import { FaGithub, FaLink, FaYoutube } from "react-icons/fa";
+import { motion } from "framer-motion";
 
-const ProjectCards = ({ project }) => {
+const ProjectCard = ({ project, index = 0 }) => {
+  const {
+    title,
+    description,
+    tags = [],
+    liveLink,
+    githubLink,
+    youtubeLink,
+  } = project;
+
   return (
-    <div className="carousel-item w-3/5 card bg-black shadow-lg hover:shadow-gray-700 lg:card-side m-5 hover:scale-105 transition duration-300 ease-in-out">
-      <figure className="max-w-md min-h-md">
-        <img
-          className="object-cover hover:object-contain min-h-80 lg:w-full lg:h-full transition-all duration-1000"
-          loading="lazy"
-          src={project.imageSrc}
-          alt={project.altText}
-        />
-      </figure>
-      <div className="card-body bg-slate-800 lg:rounded-r-2xl">
-        <h2 className="card-title">{project.title}</h2>
-        <p className="max-w-md text-justify">{project.description}</p>
-        <div className="card-actions justify-end">
-          <div className="card-actions justify-start self-center">
-            <a href={project.liveLink} className="ml-2 text-gray-400 hover:text-gray-100 text-4xl cursor-pointer">
-              <FaLink />
-            </a>
-            <a href={project.githubLink} className="ml-2 text-gray-400 hover:text-black text-4xl cursor-pointer">
-              <FaGithub />
-            </a>
-            <a href={project.youtubeLink} className="ml-2 text-gray-400 hover:text-red-500 text-4xl cursor-pointer">
-              <FaYoutube />
-            </a>
-          </div>
-          <button className="btn btn-outline btn-secondary hover:btn-accent rounded-full">
-            Details
-          </button>
-        </div>
+    <motion.article
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1], delay: index * 0.1 }}
+      className="bg-surface-container-low border border-outline-variant p-md group hover:border-primary-container transition-colors duration-200 flex flex-col gap-sm"
+    >
+      <div className="border-b border-outline-variant pb-sm">
+        <h3 className="font-headline-lg text-[20px] text-on-surface group-hover:text-primary-container transition-colors">
+          {title}
+        </h3>
       </div>
-    </div>
+      <p className="font-body-md text-body-md text-on-surface-variant flex-1">
+        {description}
+      </p>
+      {tags.length > 0 && (
+        <div className="flex flex-wrap gap-xs">
+          {tags.map((tag) => (
+            <span
+              key={tag}
+              className="bg-surface-variant text-primary-container font-data-mono text-[10px] px-2 py-1"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+      <div className="flex gap-md flex-wrap">
+        {liveLink && (
+          <a
+            href={liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-data-mono text-[12px] text-primary-container hover:underline uppercase tracking-widest inline-flex items-center gap-1 group/link"
+          >
+            LIVE
+            <span className="inline-block group-hover/link:translate-x-0.5 transition-transform duration-150">→</span>
+          </a>
+        )}
+        {githubLink && (
+          <a
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-data-mono text-[12px] text-primary-container hover:underline uppercase tracking-widest inline-flex items-center gap-1 group/link"
+          >
+            GITHUB
+            <span className="inline-block group-hover/link:translate-x-0.5 transition-transform duration-150">→</span>
+          </a>
+        )}
+        {youtubeLink && (
+          <a
+            href={youtubeLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-data-mono text-[12px] text-primary-container hover:underline uppercase tracking-widest inline-flex items-center gap-1 group/link"
+          >
+            DEMO
+            <span className="inline-block group-hover/link:translate-x-0.5 transition-transform duration-150">→</span>
+          </a>
+        )}
+      </div>
+    </motion.article>
   );
 };
 
-export default ProjectCards;
+export default ProjectCard;

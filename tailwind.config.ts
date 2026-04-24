@@ -1,71 +1,96 @@
 import type { Config } from "tailwindcss";
 
-const {
-  default: flattenColorPalette,
-} = require("tailwindcss/lib/util/flattenColorPalette");
-
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkmode: "class",
+  darkMode: "class",
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        "secondary": "#bec6e0",
+        "tertiary-fixed": "#d8e3fb",
+        "on-surface-variant": "#bec8ce",
+        "error": "#ffb4ab",
+        "surface-bright": "#3a3939",
+        "primary-fixed": "#c0e8ff",
+        "on-tertiary": "#263143",
+        "secondary-fixed": "#dae2fd",
+        "on-tertiary-container": "#495468",
+        "surface-container": "#201f1f",
+        "surface-tint": "#7bd1fa",
+        "outline": "#899298",
+        "inverse-primary": "#006686",
+        "tertiary-container": "#bec9e1",
+        "background": "#131313",
+        "on-error-container": "#ffdad6",
+        "on-secondary-container": "#adb4ce",
+        "on-primary-fixed-variant": "#004d66",
+        "secondary-container": "#3f465c",
+        "on-primary-fixed": "#001e2b",
+        "on-surface": "#e5e2e1",
+        "on-background": "#e5e2e1",
+        "primary-container": "#7dd3fc",
+        "error-container": "#93000a",
+        "surface-container-lowest": "#0e0e0e",
+        "surface-container-high": "#2a2a2a",
+        "surface-dim": "#131313",
+        "on-secondary-fixed": "#131b2e",
+        "surface-variant": "#353534",
+        "on-secondary": "#283044",
+        "tertiary-fixed-dim": "#bcc7de",
+        "surface": "#131313",
+        "on-error": "#690005",
+        "on-primary": "#003547",
+        "surface-container-highest": "#353534",
+        "tertiary": "#dae5fd",
+        "primary": "#c5eaff",
+        "secondary-fixed-dim": "#bec6e0",
+        "on-tertiary-fixed": "#111c2d",
+        "on-tertiary-fixed-variant": "#3c475a",
+        "on-primary-container": "#005b78",
+        "primary-fixed-dim": "#7bd1fa",
+        "inverse-on-surface": "#313030",
+        "inverse-surface": "#e5e2e1",
+        "surface-container-low": "#1c1b1b",
+        "outline-variant": "#3f484e",
+        "on-secondary-fixed-variant": "#3f465c",
+      },
+      borderRadius: {
+        DEFAULT: "0.25rem",
+        lg: "0.5rem",
+        xl: "0.75rem",
+        full: "9999px",
+      },
+      spacing: {
+        md: "24px",
+        xs: "8px",
+        base: "4px",
+        xl: "80px",
+        sm: "16px",
+        lg: "48px",
+        margin: "32px",
+        gutter: "20px",
+      },
+      fontFamily: {
+        "data-mono": ["var(--font-ibm-plex-mono)", "monospace"],
+        "display-poetry": ["var(--font-playfair-display)", "serif"],
+        "headline-lg": ["var(--font-inter)", "sans-serif"],
+        "label-caps": ["var(--font-ibm-plex-mono)", "monospace"],
+        "body-md": ["var(--font-inter)", "sans-serif"],
+      },
+      fontSize: {
+        "data-mono": ["14px", { lineHeight: "1.4", letterSpacing: "0.02em", fontWeight: "500" }],
+        "display-poetry": ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+        "headline-lg": ["32px", { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "600" }],
+        "label-caps": ["12px", { lineHeight: "1", letterSpacing: "0.1em", fontWeight: "600" }],
+        "body-md": ["16px", { lineHeight: "1.6", letterSpacing: "0", fontWeight: "400" }],
       },
     },
   },
-  daisyui: {
-    themes: [
-      {
-        datadark:{
-          "primary": "#1F2937", 
-          "secondary": "#38BDF8",
-          "accent": "#ea580c",
-          "neutral": "#607274",
-          "base-100": "#0F202A",
-          "info": "#CBE4DE",
-          "success": "#65A30D",
-          "warning": "#EAB308",      
-          "error": "#DC2626",
-        },
-        legacy:{
-          "primary": "#3cc1c9ff", 
-          "secondary": "#3c949cff",
-          "accent": "#2e2e2eff",
-          "neutral": "#607274",
-          "base-100": "#0F202A",
-          "info": "#CBE4DE",
-          "success": "#65A30D",
-          "warning": "#EAB308",      
-          "error": "#DC2626",
-        }
-      },
-      "corporate",
-    ],
-  },
-  plugins: [
-    require("daisyui"),
-    addVariablesForColors,
-  ],
-  
+  plugins: [],
 };
-
-// This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
-function addVariablesForColors({ addBase, theme }: any) {
-  let allColors = flattenColorPalette(theme("colors"));
-  let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-  );
- 
-  addBase({
-    ":root": newVars,
-  });
-}
 
 export default config;

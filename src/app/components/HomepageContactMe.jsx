@@ -1,69 +1,139 @@
-import React from "react";
-import { SiGithub, SiLinkedin, SiYoutube } from "react-icons/si";
+"use client";
+import React, { useState, useRef } from "react";
+import GlitchLabel from "./GlitchLabel";
+
+const STATUS = { IDLE: "idle", SUBMITTING: "submitting", SUCCESS: "success", ERROR: "error" };
 
 const HomepageContactMe = () => {
+  const [status, setStatus] = useState(STATUS.IDLE);
+  const formRef = useRef(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (status === STATUS.SUBMITTING) return;
+    setStatus(STATUS.SUBMITTING);
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(Object.fromEntries(new FormData(formRef.current))),
+      });
+
+      if (res.ok) {
+        setStatus(STATUS.SUCCESS);
+      } else {
+        setStatus(STATUS.ERROR);
+      }
+    } catch {
+      setStatus(STATUS.ERROR);
+    }
+  };
+
   return (
-    <div>
-      <div id="Projects" className="flex justify-center items-center mt-10 mb-5 text-5xl font-montseratt font-bold">
-        Let&apos;s Connect!
-      </div>
-      <div className="flex justify-center">
-        <div className="flex self-center flex-col md:flex-row shadow-lg rounded-2xl p-4 w-3/5 bg-primary m-2">
-          <div className="md:w-1/3 flex justify-center items-center"> 
-            <img
-              src="/images/professional.webp"
-              alt="Profile"
-              className="object-cover rounded-lg bg-neutral-100 mask mask-squircle"
-            />
-          </div>
-          <div className="md:w-2/3 mt-4 md:mt-0 md:ml-4 flex flex-col justify-center">
-            <form action="https://api.web3forms.com/submit" method="POST">
+    <section className="max-w-7xl mx-auto px-6 py-lg">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-md">
+        <div className="md:col-span-5 flex flex-col gap-md">
+          <GlitchLabel className="font-data-mono text-label-caps text-primary-container uppercase tracking-widest">
+            {"// CONTACT"}
+          </GlitchLabel>
+          <h2 className="font-display-poetry text-display-poetry text-on-surface">
+            Transmit
+          </h2>
+          <p className="font-body-md text-body-md text-on-surface-variant max-w-[70ch]">
+            Project collaboration, consulting, and engineering inquiries.
+          </p>
+        </div>
+        <div className="md:col-span-7 bg-surface-container-high border border-outline-variant p-md">
+          {status === STATUS.SUCCESS ? (
+            <div className="flex items-center justify-center h-full min-h-[300px]">
+              <div className="text-center">
+                <div className="font-data-mono text-data-mono text-primary-container mb-sm">
+                  MESSAGE_DELIVERED
+                </div>
+                <p className="font-body-md text-body-md text-on-surface-variant max-w-[70ch]">
+                  Transmission received. Expect a response within 24 hours.
+                </p>
+              </div>
+            </div>
+          ) : (
+            <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-md">
+              <input type="hidden" name="access_key" value="06898dee-aec1-4979-a6a1-194c5dc8d41d" />
+              <input type="hidden" name="subject" value="Message from your portfolio" />
+              <input type="hidden" name="from_name" value="sakibshahon.netlify.app" />
+              <input type="checkbox" name="botcheck" className="hidden" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
 
-            <input type="hidden" name="access_key" value="06898dee-aec1-4979-a6a1-194c5dc8d41d"></input>
-            <input type="hidden" name="subject" value="Message from your portfolio"></input>
-            <input type="hidden" name="from_name" value="sakibshahon.netlify.app"></input>
-
-              <div className="mb-4">
+              <div className="flex flex-col gap-xs">
                 <label
-                  htmlFor="email"
-                  className="block text-gray-200 font-bold mb-2"
+                  htmlFor="id_name"
+                  className="font-data-mono text-data-mono text-primary-container uppercase"
                 >
-                  Your Email
+                  SENDER [NAME]
+                </label>
+                <input
+                  type="text"
+                  id="id_name"
+                  name="name"
+                  required
+                  autoComplete="name"
+                  placeholder="Full name"
+                  className="bg-surface-container-lowest border-0 border-b border-outline-variant text-on-surface font-body-md focus:ring-0 focus:border-primary-container transition-colors duration-200 py-xs px-0 placeholder:text-on-surface-variant/30 outline-none"
+                />
+              </div>
+
+              <div className="flex flex-col gap-xs">
+                <label
+                  htmlFor="id_email"
+                  className="font-data-mono text-data-mono text-primary-container uppercase"
+                >
+                  ROUTE [EMAIL]
                 </label>
                 <input
                   type="email"
-                  id="email"
+                  id="id_email"
                   name="email"
-                  className="w-full px-3 py-2 bg-slate-600 border rounded-lg focus:outline-none focus:border-secondary"
+                  required
+                  autoComplete="email"
+                  placeholder="Email address"
+                  className="bg-surface-container-lowest border-0 border-b border-outline-variant text-on-surface font-body-md focus:ring-0 focus:border-primary-container transition-colors duration-200 py-xs px-0 placeholder:text-on-surface-variant/30 outline-none"
                 />
               </div>
-              <div className="mb-4">
+
+              <div className="flex flex-col gap-xs mb-sm">
                 <label
-                  htmlFor="message"
-                  className="block text-gray-200 font-bold mb-2"
+                  htmlFor="id_payload"
+                  className="font-data-mono text-data-mono text-primary-container uppercase"
                 >
-                  Message
+                  PAYLOAD [MESSAGE]
                 </label>
                 <textarea
-                  id="message"
+                  id="id_payload"
                   name="message"
-                  className="w-full bg-slate-600 px-3 py-2 border rounded-lg focus:outline-none focus:border-secondary"
-                  rows="5"
-                ></textarea>
+                  required
+                  placeholder="Describe your project or inquiry..."
+                  rows={4}
+                  className="bg-surface-container-lowest border-0 border-b border-outline-variant text-on-surface font-body-md focus:ring-0 focus:border-primary-container transition-colors duration-200 py-xs px-0 placeholder:text-on-surface-variant/30 outline-none resize-y"
+                />
               </div>
+
+              {status === STATUS.ERROR && (
+                <div className="font-data-mono text-[12px] text-error border-b border-error pb-xs" role="alert">
+                  TRANSMISSION_FAILED // Retry in a moment
+                </div>
+              )}
+
               <button
                 type="submit"
-                className="bg-secondary hover:bg-accent text-black px-4 py-2 rounded-lg"
+                disabled={status === STATUS.SUBMITTING}
+                className="bg-primary-container text-on-primary font-data-mono text-label-caps uppercase px-md py-sm rounded-none w-fit hover:bg-primary-fixed transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send
+                {status === STATUS.SUBMITTING ? "TRANSMITTING..." : "EXECUTE TRANSMISSION"}
               </button>
             </form>
-            <div>
-            </div>
-          </div>
+          )}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
