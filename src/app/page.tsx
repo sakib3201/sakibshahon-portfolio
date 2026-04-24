@@ -1,21 +1,66 @@
-import HomepageHero from "../app/components/HomepageHero";
-import LegacyNavbar from "../app/components/LegacyNavbar";
-import ProjectSlider from "../app/components/ProjectSlider";
-import ServiceSection from "../app/components/ServiceSection";
-import Footer from "../app/components/Footer";
-import HomepageContactMe from "../app/components/HomepageContactMe"; 
+import LegacyNavbar from "./components/LegacyNavbar";
+import HomepageHero from "./components/HomepageHero";
+import ServiceSection from "./components/ServiceSection";
 import ExperienceTimeline from "./components/ExperienceTimeline";
+import ProjectCard from "./components/projectcard";
+import HomepageContactMe from "./components/HomepageContactMe";
+import Footer from "./components/Footer";
+import GlitchLabel from "./components/GlitchLabel";
+
+const featuredProjects = [
+  {
+    title: "ICTBJ-2023",
+    description:
+      "The official website of Jatiya Kabi Kazi Nazrul Islam University's research conference on Technology, Business, and Justice.",
+    tags: ["React.js", "Node.js", "MySQL"],
+    liveLink: "https://ictbj.jkkniu.edu.bd/",
+    githubLink: "",
+    youtubeLink: "",
+  },
+  {
+    title: "Decentralized Voting App",
+    description:
+      "A blockchain-based voting app with facial recognition for voter authentication. Voting data stored on-chain for maximum security.",
+    tags: ["Blockchain", "Solidity", "Python"],
+    liveLink: "",
+    githubLink: "",
+    youtubeLink: "",
+  },
+  {
+    title: "Amar Shop",
+    description:
+      "Complete solutions for small to medium-sized shops: inventory management, financial analytics, and customer & sales management.",
+    tags: ["React.js", "Node.js", "MongoDB"],
+    liveLink: "",
+    githubLink: "",
+    youtubeLink: "",
+  },
+];
 
 export default function Home() {
   return (
-    <main>
-      <LegacyNavbar></LegacyNavbar>
-      <HomepageHero></HomepageHero>
-      <ProjectSlider></ProjectSlider>
-      <ServiceSection></ServiceSection>
-      <ExperienceTimeline></ExperienceTimeline>
-      <HomepageContactMe></HomepageContactMe>
-      <Footer></Footer>
+    <main className="bg-background min-h-screen">
+      <LegacyNavbar />
+      <HomepageHero />
+      <ServiceSection />
+      <ExperienceTimeline />
+      <section className="max-w-7xl mx-auto px-6 py-lg">
+        <div className="mb-lg">
+          <GlitchLabel className="font-data-mono text-label-caps text-primary-container uppercase tracking-widest block mb-xs">
+            {"// FEATURED WORK"}
+          </GlitchLabel>
+          <h2 className="font-headline-lg text-headline-lg text-on-surface border-b border-outline-variant pb-sm">
+            Projects
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-md">
+          {featuredProjects.map((project, i) => (
+            <ProjectCard key={project.title} project={project} index={i} />
+          ))}
+        </div>
+      </section>
+      <HomepageContactMe />
+      <Footer />
     </main>
   );
 }

@@ -1,15 +1,15 @@
 import LegacyNavbar from "../../app/components/LegacyNavbar";
-import Footer from "../../app/components/Footer";
 import ProjectsHeroSection from "../../app/components/ProjectsHeroSection";
 import ProjectLibrary from "../../app/components/ProjectLibrary";
+import Footer from "../../app/components/Footer";
 
-export default function Home() {
+export default function Projects() {
   return (
-    <main>
-      <LegacyNavbar></LegacyNavbar>
-      <ProjectsHeroSection></ProjectsHeroSection>
-      <ProjectLibrary></ProjectLibrary>
-      <Footer></Footer>
+    <main className="bg-background min-h-screen">
+      <LegacyNavbar />
+      <ProjectsHeroSection />
+      <ProjectLibrary />
+      <Footer />
     </main>
   );
 }

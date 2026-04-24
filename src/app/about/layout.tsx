@@ -1,22 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "../globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sakib Shahon",
-  description: "Sakib Ahamed Shahons portfolio",
+  title: "About | Sakib Ahammed Shahon",
+  description:
+    "The journey of Sakib Ahammed Shahon into software engineering and AI architecture.",
 };
 
-export default function RootLayout({
+export default function AboutLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en" data-theme="datadark">
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
+}: Readonly<{ children: React.ReactNode }>) {
+  return children;
 }

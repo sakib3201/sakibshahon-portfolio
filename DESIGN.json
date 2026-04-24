@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-04-24T00:00:00.000Z",
+  "title": "Design System: Sakib Shahon Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "ice-wire": {
+        "role": "primary",
+        "displayName": "Ice Wire",
+        "canonical": "oklch(0.79 0.1 210)",
+        "tonalRamp": [
+          "oklch(0.15 0.04 210)",
+          "oklch(0.25 0.06 210)",
+          "oklch(0.35 0.07 210)",
+          "oklch(0.45 0.08 210)",
+          "oklch(0.55 0.09 210)",
+          "oklch(0.65 0.095 210)",
+          "oklch(0.75 0.1 210)",
+          "oklch(0.85 0.08 210)"
+        ]
+      },
+      "ice-wire-pale": {
+        "role": "primary",
+        "displayName": "Ice Wire Pale",
+        "canonical": "oklch(0.89 0.07 210)",
+        "tonalRamp": [
+          "oklch(0.15 0.03 210)",
+          "oklch(0.25 0.04 210)",
+          "oklch(0.35 0.05 210)",
+          "oklch(0.45 0.055 210)",
+          "oklch(0.55 0.06 210)",
+          "oklch(0.65 0.065 210)",
+          "oklch(0.75 0.07 210)",
+          "oklch(0.90 0.07 210)"
+        ]
+      },
+      "void-black": {
+        "role": "neutral",
+        "displayName": "Void Black",
+        "canonical": "oklch(0.13 0.005 250)",
+        "tonalRamp": [
+          "oklch(0.05 0.003 250)",
+          "oklch(0.08 0.004 250)",
+          "oklch(0.10 0.004 250)",
+          "oklch(0.13 0.005 250)",
+          "oklch(0.16 0.005 250)",
+          "oklch(0.20 0.006 250)",
+          "oklch(0.25 0.006 250)",
+          "oklch(0.30 0.007 250)"
+        ]
+      },
+      "surface-base": {
+        "role": "neutral",
+        "displayName": "Surface Base",
+        "canonical": "oklch(0.15 0.005 250)",
+        "tonalRamp": [
+          "oklch(0.05 0.003 250)",
+          "oklch(0.08 0.004 250)",
+          "oklch(0.10 0.004 250)",
+          "oklch(0.13 0.005 250)",
+          "oklch(0.15 0.005 250)",
+          "oklch(0.20 0.006 250)",
+          "oklch(0.25 0.006 250)",
+          "oklch(0.30 0.007 250)"
+        ]
+      },
+      "surface-low": {
+        "role": "neutral",
+        "displayName": "Surface Low",
+        "canonical": "oklch(0.19 0.005 250)",
+        "tonalRamp": [
+          "oklch(0.05 0.003 250)",
+          "oklch(0.08 0.004 250)",
+          "oklch(0.12 0.004 250)",
+          "oklch(0.15 0.005 250)",
+          "oklch(0.19 0.005 250)",
+          "oklch(0.23 0.006 250)",
+          "oklch(0.28 0.006 250)",
+          "oklch(0.33 0.007 250)"
+        ]
+      },
+      "surface-high": {
+        "role": "neutral",
+        "displayName": "Surface High",
+        "canonical": "oklch(0.27 0.006 250)",
+        "tonalRamp": [
+          "oklch(0.07 0.003 250)",
+          "oklch(0.10 0.004 250)",
+          "oklch(0.15 0.005 250)",
+          "oklch(0.19 0.005 250)",
+          "oklch(0.23 0.006 250)",
+          "oklch(0.27 0.006 250)",
+          "oklch(0.32 0.007 250)",
+          "oklch(0.37 0.007 250)"
+        ]
+      },
+      "surface-highest": {
+        "role": "neutral",
+        "displayName": "Surface Highest",
+        "canonical": "oklch(0.32 0.007 250)",
+        "tonalRamp": [
+          "oklch(0.08 0.003 250)",
+          "oklch(0.12 0.004 250)",
+          "oklch(0.17 0.005 250)",
+          "oklch(0.22 0.006 250)",
+          "oklch(0.27 0.006 250)",
+          "oklch(0.32 0.007 250)",
+          "oklch(0.37 0.007 250)",
+          "oklch(0.42 0.008 250)"
+        ]
+      },
+      "text-primary": {
+        "role": "neutral",
+        "displayName": "Text Primary",
+        "canonical": "oklch(0.88 0.005 60)",
+        "tonalRamp": [
+          "oklch(0.10 0.002 60)",
+          "oklch(0.25 0.003 60)",
+          "oklch(0.40 0.003 60)",
+          "oklch(0.55 0.004 60)",
+          "oklch(0.65 0.004 60)",
+          "oklch(0.75 0.005 60)",
+          "oklch(0.82 0.005 60)",
+          "oklch(0.88 0.005 60)"
+        ]
+      },
+      "text-secondary": {
+        "role": "neutral",
+        "displayName": "Text Secondary",
+        "canonical": "oklch(0.76 0.02 240)",
+        "tonalRamp": [
+          "oklch(0.10 0.005 240)",
+          "oklch(0.20 0.008 240)",
+          "oklch(0.30 0.01 240)",
+          "oklch(0.40 0.012 240)",
+          "oklch(0.50 0.014 240)",
+          "oklch(0.60 0.016 240)",
+          "oklch(0.70 0.018 240)",
+          "oklch(0.80 0.02 240)"
+        ]
+      },
+      "outline": {
+        "role": "neutral",
+        "displayName": "Outline",
+        "canonical": "oklch(0.60 0.015 240)",
+        "tonalRamp": [
+          "oklch(0.10 0.004 240)",
+          "oklch(0.20 0.006 240)",
+          "oklch(0.30 0.008 240)",
+          "oklch(0.40 0.01 240)",
+          "oklch(0.50 0.012 240)",
+          "oklch(0.60 0.015 240)",
+          "oklch(0.70 0.016 240)",
+          "oklch(0.80 0.018 240)"
+        ]
+      },
+      "outline-muted": {
+        "role": "neutral",
+        "displayName": "Outline Muted",
+        "canonical": "oklch(0.35 0.01 240)",
+        "tonalRamp": [
+          "oklch(0.05 0.002 240)",
+          "oklch(0.10 0.004 240)",
+          "oklch(0.15 0.005 240)",
+          "oklch(0.20 0.006 240)",
+          "oklch(0.25 0.007 240)",
+          "oklch(0.30 0.008 240)",
+          "oklch(0.35 0.01 240)",
+          "oklch(0.40 0.011 240)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The name and primary section titles. Used 3-4 times per page maximum. Playfair Display carries editorial identity weight."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Card titles, subsection headers. The workhorse heading for content sections."
+      },
+      "data-mono": {
+        "displayName": "Data Mono",
+        "purpose": "Tags, metadata, project links, status readouts. The terminal protocol voice."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Bios, descriptions, paragraphs. Capped at 65-75ch. Inter for readability at speed."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Section prefixes, form field identifiers, footer copyright. Always uppercase with protocol notation."
+      }
+    },
+    "shadows": [
+      {
+        "name": "timeline-glow",
+        "value": "0 0 8px rgba(125, 211, 252, 0.6)",
+        "purpose": "Functional glow on timeline milestone dots. Signals active node state. The only shadow in the system."
+      }
+    ],
+    "motion": [
+      {
+        "name": "scroll-reveal",
+        "value": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+        "purpose": "Scroll-triggered fade-in for content sections. Opacity 0 to 1, translateY 16px to 0."
+      },
+      {
+        "name": "stagger-children",
+        "value": "0.1s",
+        "purpose": "Delay between staggered child animations in grids and lists."
+      },
+      {
+        "name": "type-char",
+        "value": "0.04s",
+        "purpose": "Delay between typed characters in the hero tagline animation."
+      },
+      {
+        "name": "cursor-blink",
+        "value": "0.8s step-end infinite",
+        "purpose": "Blinking cursor animation on the hero tagline. Stops after typing completes."
+      },
+      {
+        "name": "glitch-flash",
+        "value": "0.2s ease-out",
+        "purpose": "Quick horizontal displacement on section label appearance."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" },
+      { "name": "2xl", "value": "1536px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main CTA. Ice Wire fill, dark text, zero radius. Commands, not requests.",
+      "html": "<button class=\"ds-btn-primary\">VIEW PROJECTS</button>",
+      "css": ".ds-btn-primary { background: #7dd3fc; color: #003547; padding: 12px 32px; border: none; border-radius: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: background 0.2s ease; } .ds-btn-primary:hover { background: #7bd1fa; } .ds-btn-primary:focus-visible { outline: 1px solid #7dd3fc; outline-offset: 2px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary CTA. Ice Wire border and text, transparent fill. Fills on hover.",
+      "html": "<button class=\"ds-btn-outline\">VIEW RESUME</button>",
+      "css": ".ds-btn-outline { background: transparent; color: #7dd3fc; padding: 12px 32px; border: 1px solid #7dd3fc; border-radius: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: background 0.2s ease, color 0.2s ease; } .ds-btn-outline:hover { background: #0f172a; color: #7dd3fc; } .ds-btn-outline:focus-visible { outline: 1px solid #7dd3fc; outline-offset: 2px; }"
+    },
+    {
+      "name": "Project Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Content card for projects and work samples. Flat, bordered, zero radius. Border highlights on hover.",
+      "html": "<article class=\"ds-card\"><div class=\"ds-card-tags\"><span class=\"ds-chip\">React.js</span><span class=\"ds-chip\">Node.js</span></div><h3 class=\"ds-card-title\">ICTBJ-2023</h3><div class=\"ds-card-links\"><a href=\"#\">LIVE</a><a href=\"#\">GITHUB</a></div></article>",
+      "css": ".ds-card { background: #1c1b1b; border: 1px solid #1e293b; border-radius: 0; padding: 24px; transition: border-color 0.2s ease; } .ds-card:hover { border-color: #7dd3fc; } .ds-card-title { font-family: 'Inter', system-ui, sans-serif; font-size: 20px; font-weight: 600; line-height: 1.2; color: #e5e2e1; margin: 16px 0; transition: color 0.2s ease; } .ds-card:hover .ds-card-title { color: #7dd3fc; } .ds-card-tags { display: flex; gap: 8px; flex-wrap: wrap; } .ds-card-links { display: flex; gap: 16px; margin-top: 16px; } .ds-card-links a { font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: #7dd3fc; text-decoration: none; transition: opacity 0.2s ease; } .ds-card-links a:hover { opacity: 0.8; }"
+    },
+    {
+      "name": "Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Technology tag. Surface highest background, Ice Wire text. Non-interactive.",
+      "html": "<span class=\"ds-chip\">LangChain</span>",
+      "css": ".ds-chip { background: #353534; color: #7dd3fc; padding: 4px 8px; border-radius: 0; font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.02em; display: inline-block; }"
+    },
+    {
+      "name": "Input Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Bottom-stroke-only text input. Recessed background, label above in protocol notation.",
+      "html": "<div class=\"ds-input-group\"><label class=\"ds-input-label\">IDENTIFIER [NAME]</label><input class=\"ds-input\" type=\"text\" placeholder=\"Your name\" /></div>",
+      "css": ".ds-input-group { display: flex; flex-direction: column; gap: 8px; } .ds-input-label { font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #899298; } .ds-input { background: #0e0e0e; border: none; border-bottom: 1px solid #3f484e; border-radius: 0; padding: 12px 0; color: #e5e2e1; font-family: 'Inter', system-ui, sans-serif; font-size: 16px; outline: none; transition: border-color 0.2s ease; } .ds-input:focus { border-bottom-color: #7dd3fc; } .ds-input::placeholder { color: #3f484e; }"
+    },
+    {
+      "name": "Navigation Bar",
+      "kind": "nav",
+      "refersTo": "nav-link-active",
+      "description": "Fixed top nav. Void black background, mono logo, active state via Ice Wire text and bottom border.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-nav-logo\">SAKIB AHAMMED SHAHON</span><div class=\"ds-nav-links\"><a class=\"ds-nav-link ds-nav-link-active\" href=\"/\">HOME</a><a class=\"ds-nav-link\" href=\"/projects\">PROJECTS</a><a class=\"ds-nav-link\" href=\"/about\">ABOUT</a></div></nav>",
+      "css": ".ds-nav { position: fixed; top: 0; left: 0; right: 0; height: 64px; background: #0a0a0a; border-bottom: 1px solid #1e293b; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; z-index: 50; } .ds-nav-logo { font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #7dd3fc; } .ds-nav-links { display: flex; gap: 32px; } .ds-nav-link { font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #64748b; text-decoration: none; padding: 20px 0; border-bottom: 1px solid transparent; transition: color 0.2s ease; } .ds-nav-link:hover { color: #7dd3fc; } .ds-nav-link-active { color: #7dd3fc; border-bottom-color: #7dd3fc; }"
+    },
+    {
+      "name": "Section Label",
+      "kind": "custom",
+      "refersTo": "label",
+      "description": "Protocol prefix at the top of every content section. The system's structural signature.",
+      "html": "<span class=\"ds-section-label\">// EXPERIENCE</span>",
+      "css": ".ds-section-label { font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; line-height: 1; letter-spacing: 0.1em; text-transform: uppercase; color: #7dd3fc; display: block; margin-bottom: 8px; }"
+    },
+    {
+      "name": "Experience Entry",
+      "kind": "custom",
+      "refersTo": "card",
+      "description": "Horizontal timeline entry. Company, role, dates, current badge.",
+      "html": "<div class=\"ds-exp-entry\"><div class=\"ds-exp-header\"><span class=\"ds-exp-company\">Arraytics</span><span class=\"ds-exp-badge\">CURRENT</span></div><span class=\"ds-exp-role\">Software Engineer</span><span class=\"ds-exp-dates\">2024 - Present</span></div>",
+      "css": ".ds-exp-entry { padding: 16px 24px; border-bottom: 1px solid #1e293b; transition: background 0.2s ease; cursor: pointer; } .ds-exp-entry:hover { background: #0f172a; } .ds-exp-header { display: flex; align-items: center; gap: 12px; margin-bottom: 4px; } .ds-exp-company { font-family: 'Inter', system-ui, sans-serif; font-size: 16px; font-weight: 600; color: #e5e2e1; } .ds-exp-badge { font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 500; color: #7dd3fc; border: 1px solid #7dd3fc; padding: 2px 8px; border-radius: 0; } .ds-exp-role { font-family: 'Inter', system-ui, sans-serif; font-size: 14px; color: #bec8ce; display: block; } .ds-exp-dates { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #899298; display: block; margin-top: 4px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Operations Terminal",
+    "overview": "This is not a website. It is a live system readout. Every section is a structured transmission: field names identify the data, content delivers the payload, and Ice Wire marks what is active, live, and requiring attention. The terminal metaphor is the architecture, not the wallpaper.\n\nThe system operates in perpetual dark mode because terminals do. Not for aesthetics, not because 'tools look cool dark,' but because the scene is specific: a hiring manager at 10pm, tabbing through 40 portfolio links, scanning for signal. Dark surfaces reduce ambient glare. The monospace labels and protocol prefixes reward the reader who slows down, while the Playfair Display headlines create enough contrast to pull the scanner's eye to what matters.\n\nThe system is intentionally restrained. One accent color carries 30% of the visual weight. No gradients, no glassmorphism, no decorative shadows. Depth comes from tonal surface layering: 7 surface steps from #0e0e0e to #3a3939. Interactive elements are precision instruments, flat by default, responsive through border shifts and color flips.",
+    "keyCharacteristics": [
+      "Dark tonal surfaces with one saturated cyan accent (Ice Wire)",
+      "Three-font system: serif display, sans body, mono labels",
+      "Protocol/terminal naming conventions as structural identity",
+      "Zero-radius interactive elements (sharp, terminal-native)",
+      "Flat elevation model: tonal layering, no decorative shadows",
+      "Scroll-triggered motion only where it aids scanning"
+    ],
+    "rules": [
+      { "name": "The Single Signal Rule", "body": "Ice Wire is the only saturated color on any surface. It carries 30% of the visual weight through frequency of use, never through palette expansion. No second accent, no complementary hue, no 'just a touch of warm.' The signal is cold, singular, and deliberate.", "section": "colors" },
+      { "name": "The Tonal Gravity Rule", "body": "Surfaces step upward in lightness from the background (13% to 20% to 35%). Never skip more than two steps in a single layer. The gradient must be imperceptible to the casual eye; only the scanning eye should notice the depth.", "section": "colors" },
+      { "name": "The Role Separation Rule", "body": "Each font has exactly one role. Playfair Display is identity. Inter is content. IBM Plex Mono is protocol. If a mono font appears in a headline, or Playfair appears in a label, the system is broken.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Surfaces are flat. No shadow is applied to cards, modals, dropdowns, or any container. If depth is needed, raise the tonal surface step. The glow exemption is limited to timeline node indicators only.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use Ice Wire sparingly. Every instance should mark something active, live, or actionable. If more than 30% of visible pixels are Ice Wire, the signal has become noise.",
+      "Do use the // PREFIX protocol labels on every content section. This is structural identity, not decoration.",
+      "Do step through surface tonal layers sequentially. Surface Low for cards, Surface High for hover states, Surface Deep for recessed inputs.",
+      "Do use IBM Plex Mono for all labels, tags, nav text, form field identifiers, and section prefixes.",
+      "Do keep body text capped at 65-75ch max-width. The terminal aesthetic demands containment.",
+      "Do use Playfair Display only for the name and primary section titles. It carries identity weight that dilutes with frequency."
+    ],
+    "donts": [
+      "Don't build a generic developer portfolio. No two-column hero with headshot, no gradient backgrounds, no 'passionate developer' copy, no progress bars for skill percentages, no testimonial sliders.",
+      "Don't apply rounded corners to interactive elements. Buttons, cards, inputs, chips are all 0px radius.",
+      "Don't use side-stripe borders (border-left or border-right greater than 1px as a colored accent).",
+      "Don't apply shadows to cards, modals, or containers. Elevation is tonal, not spatial.",
+      "Don't use Ice Wire for large background fills. It is a signal color, not a surface color.",
+      "Don't mix font roles. If a label is in Inter instead of IBM Plex Mono, the protocol layer has broken.",
+      "Don't use gradient text (background-clip: text with gradient). The accent is a single solid color.",
+      "Don't add decorative glassmorphism. No blur overlays, no frosted glass cards.",
+      "Don't write em dashes in any copy."
+    ]
+  }
+}
