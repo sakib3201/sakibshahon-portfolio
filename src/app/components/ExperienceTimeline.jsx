@@ -1,109 +1,93 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
+
+const experiences = [
+  {
+    company: "Arraytics",
+    role: "Software Engineer",
+    period: "2024 – Present",
+    tags: ["WordPress", "PHP", "React.js", "MySQL"],
+    current: true,
+  },
+  {
+    company: "Incevio",
+    role: "Full Stack Web Developer",
+    period: "Nov 2023 – 2024",
+    tags: ["Laravel", "MySQL", "Bootstrap", "jQuery"],
+    current: false,
+  },
+  {
+    company: "Data Sapience Lab",
+    role: "Software Engineer",
+    period: "2023",
+    tags: ["Python", "PyTorch", "React.js", "Node.js"],
+    current: false,
+  },
+];
 
 const ExperienceTimeline = () => {
   return (
-    <section>
-      <div
-        className="flex justify-center items-center mt-5 mb-5 text-5xl font-montseratt font-bold"
-        id="Skills"
-      >
-        Professional Experience
+    <section className="max-w-7xl mx-auto px-6 py-lg">
+      <div className="mb-lg">
+        <span className="font-data-mono text-label-caps text-primary-container uppercase tracking-widest block mb-xs animate-glitch">
+          {"// EXPERIENCE"}
+        </span>
+        <h2 className="font-headline-lg text-headline-lg text-on-surface border-b border-slate-800 pb-sm">
+          The Ledger
+        </h2>
       </div>
-      <div className="flex flex-wrap justify-center gap-5">
-        <div className="card w-96 lg:w-2/5 bg-base-300 rounded-box hover:shadow-lg hover:shadow-black duration-300 ease-in-out">
-            <figure className="bg-white min-h-[45vh]">
-                <img
-                    src="/images/incevio_logo.webp"
-                    alt="Incevio Logo"
-                />
-            </figure>
-            <div className="card-body">
-            <div className="card-title justify-between">
-              <h2>Full Stack Web Developer</h2>
-              <h3><span className="text-gray-500">@</span>
-              Incev<span className="text-yellow-500">!</span>o
-              </h3>
+      <div className="flex flex-col">
+        {experiences.map((exp, i) => (
+          <motion.div
+            key={exp.company}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.3, ease: "easeOut", delay: i * 0.1 }}
+            className="group flex flex-col md:flex-row justify-between items-start md:items-center py-sm border-b border-slate-800 hover:bg-slate-900 transition-colors px-sm -mx-sm cursor-pointer"
+          >
+            <div>
+              <div className="flex items-center gap-3 mb-1">
+                <h3 className="font-headline-lg text-[20px] text-on-surface group-hover:text-primary-container transition-colors">
+                  {exp.role}
+                </h3>
+                {exp.current && (
+                  <span className="font-data-mono text-[10px] text-primary-container border border-primary-container px-2 py-0.5 uppercase">
+                    CURRENT
+                  </span>
+                )}
+              </div>
+              <div className="font-data-mono text-[12px] text-on-surface-variant">
+                @{exp.company} · {exp.period}
+              </div>
             </div>
-            <p className="text-justify">
-              Working as a full stack web developer with focus on the backend. My
-              responsibilities include building and maintaining the backend of
-              the website, develop API, integrate third party API such as
-              payment gateways and also the frontend. I also work on the
-              database , deployment and fix clients issues or deliver custom
-              features for specific clients.
-            </p>
-            <div className="card-actions justify-end">
-                <div className="badge badge-outline">Laravel</div>
-                <div className="badge badge-outline">MySQL</div>
-                <div className="badge badge-outline">Bootstrap</div>
-                <div className="badge badge-outline">Ajax</div>
-                <div className="badge badge-outline">Jquery</div>
+            <div className="mt-xs md:mt-0 flex items-center gap-md">
+              <div className="hidden md:flex flex-wrap gap-xs">
+                {exp.tags.slice(0, 3).map((tag) => (
+                  <span
+                    key={tag}
+                    className="bg-surface-variant text-primary-container font-data-mono text-[10px] px-2 py-1"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <svg
+                className="text-slate-600 group-hover:text-primary-container transition-colors"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
             </div>
-          </div>
-        </div>
-        <div className="card w-96 lg:w-2/5 bg-base-300 rounded-box hover:shadow-lg hover:shadow-black duration-300 ease-in-out">
-            <figure className="bg-white min-h-[45vh]">
-                <img
-                    src="/images/arraytics-logo.webp"
-                    alt="Arraytics Logo"
-                />
-            </figure>
-            <div className="card-body">
-            <div className="card-title justify-between">
-              <h2>Software Engineer</h2>
-              <h3><span className="text-gray-500">@</span>
-              Arraytics
-              </h3>
-            </div>
-            <div className="badge badge-secondary">Working Here!</div>
-            <p className="text-justify">
-             I work as a software engineer focused on wordpress plugin development . I have worked on wordpress plugins eventin, booktics and timetics with react based frontend and full php based wordpress backend. I have worked with developing full plugins from ground up like booktics to adding third party integrations like google calendar and outlook calendar integrations in booktics and timetics. Currently I am working on delivering AI integrated features for the plugins.
-            </p>
-            <div className="card-actions justify-end">
-                <div className="badge badge-outline">Wordpress</div>
-                <div className="badge badge-outline">PHP</div>
-                <div className="badge badge-outline">React.js</div>
-                <div className="badge badge-outline">MySQL</div>
-            </div>
-          </div>
-        </div>
-        <div className="card w-96 lg:w-2/5 bg-base-300 rounded-box hover:shadow-lg hover:shadow-black duration-300 ease-in-out">
-          <figure className="bg-white min-h-50 min-h-[45vh]">
-            <img
-              src="/images/datasapiencelogo-nobg.png"
-              alt="Data Sapience Lab Logo"
-            />
-          </figure>
-          <div className="card-body">
-            <div className="card-title justify-between">
-              <h2>Software engineer</h2>
-              <h3><span className="text-gray-500">@</span>
-              <span className="font-cursive">Data Sapience Lab</span></h3>
-            </div>
-            <p className="text-justify">
-              I worked as a software engineer to deliver machine learning and
-              data analytics and Visualization solution for clients. I also
-              worked on building web applications for small to medium businesses
-              and startups.
-            </p>
-            <p className="text-justify">
-              My responsibilities also included mentoring new developers on the
-              team and organizing small team of 3-5 people to plan and execute
-              projects on time.
-            </p>
-            <div className="card-actions justify-end mt-5">
-              <div className="badge badge-outline">Python</div>
-              <div className="badge badge-outline">Pandas</div>
-              <div className="badge badge-outline">Numpy</div>
-              <div className="badge badge-outline">Pytorch</div>
-              <div className="badge badge-outline">Tensorflow</div>
-              <div className="badge badge-outline">Scikit-learn</div>
-              <div className="badge badge-outline">React.js</div>
-              <div className="badge badge-outline">Node.js</div>
-              <div className="badge badge-outline">MongoDB</div>
-            </div>
-          </div>
-        </div>
+          </motion.div>
+        ))}
       </div>
     </section>
   );

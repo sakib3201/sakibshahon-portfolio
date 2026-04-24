@@ -1,43 +1,46 @@
-import React from 'react';
-import ProjectLibraryCards from './ProjectLibraryCard';
+import React from "react";
+import ProjectLibraryCards from "./ProjectLibraryCard";
+
+const projects = [
+  {
+    title: "ICTBJ-2023",
+    description:
+      "The official website of Jatiya Kabi Kazi Nazrul Islam University's research conference on Technology, Business, and Justice. Used by hundreds of students, teachers, and researchers to submit papers and register.",
+    tags: ["React.js", "Node.js", "MySQL"],
+    liveLink: "https://ictbj.jkkniu.edu.bd/",
+    githubLink: "",
+    youtubeLink: "",
+  },
+  {
+    title: "Decentralized Voting App",
+    description:
+      "A blockchain-based voting app that stores voting data on-chain. Provides an extremely secure voting system with facial recognition for voter authentication.",
+    tags: ["Blockchain", "Solidity", "Python", "OpenCV"],
+    liveLink: "",
+    githubLink: "",
+    youtubeLink: "",
+  },
+  {
+    title: "Amar Shop",
+    description:
+      "Complete solutions for a small to medium-sized shop: inventory management, financial report generation & analytics, customer & sales management.",
+    tags: ["React.js", "Node.js", "MongoDB"],
+    liveLink: "",
+    githubLink: "",
+    youtubeLink: "",
+  },
+];
 
 const ProjectLibrary = () => {
-    const projects = [
-        {
-            imageSrc: "/images/ictbjhomepage.png",
-            altText: "ICTBJ-2023",
-            title: "ICTBJ-2023",
-            description: "The official website of Jatiya Kabi Kazi Nazrul Islam University's research conference on Technology, Business, and Justice. Used by over hundreds of students, teachers, and researchers to submit their research papers and register for the conference.",
-            liveLink: "https://ictbj.jkkniu.edu.bd/",
-            youtubeLink: "",
-            githubLink: "",
-        },
-        {
-            imageSrc: "/images/evotingproject.png",
-            altText: "Evoting Project",
-            title: "Decentralized Voting App",
-            description: "A blockchain-based voting app that stores its voting data in the blockchain. Providing extremely secure voting system. It has facial recognition for voter authentication.",
-            liveLink: "",
-            youtubeLink: "",
-            githubLink: "",
-        },
-        {
-            imageSrc: "/images/amarshopproject.png",
-            altText: "E-commerce website",
-            title: "Amar Shop",
-            description: "A website that offers complete solutions for a small to medium-sized shop with features including inventory management, financial report generation & analytics, and customer & sales management.",
-            liveLink: "",
-            youtubeLink: "",
-            githubLink: "",
-        },
-    ];
-    return (
-        <div className='project_library_collection'>
-            {projects.map((project) => (
-                <ProjectLibraryCards key={project.title} project={project} />
-            ))}
-        </div>
-    );
+  return (
+    <section className="max-w-7xl mx-auto px-6 py-lg">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-md">
+        {projects.map((project) => (
+          <ProjectLibraryCards key={project.title} project={project} />
+        ))}
+      </div>
+    </section>
+  );
 };
 
 export default ProjectLibrary;
