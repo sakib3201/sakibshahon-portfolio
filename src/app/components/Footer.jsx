@@ -2,17 +2,17 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#0a0a0a] border-t border-slate-800 mt-xl">
-      <div className="flex flex-col md:flex-row justify-between items-center w-full px-8 py-8 gap-4 max-w-7xl mx-auto">
+    <footer className="w-full bg-surface-container-lowest border-t border-outline-variant mt-xl">
+      <div className="flex flex-col md:flex-row justify-between items-center w-full px-6 py-md gap-md max-w-7xl mx-auto">
         <div className="text-primary-container font-data-mono text-label-caps uppercase tracking-widest">
-          {"© 2024 SAKIB AHAMMED SHAHON // SYSTEM_STABLE"}
+          {"\u00A9 2026 SAKIB AHAMMED SHAHON // SYSTEM_STABLE"}
         </div>
-        <div className="flex gap-6">
+        <div className="flex gap-md">
           <a
             href="https://github.com/sakib3201"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-data-mono text-label-caps uppercase tracking-widest text-slate-600 hover:text-primary-container transition-colors duration-150"
+            className="font-data-mono text-label-caps uppercase tracking-widest text-outline hover:text-primary-container transition-colors duration-200 py-xs"
           >
             GITHUB
           </a>
@@ -20,7 +20,7 @@ const Footer = () => {
             href="https://linkedin.com/in/sakib-ahamed-shahon"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-data-mono text-label-caps uppercase tracking-widest text-slate-600 hover:text-primary-container transition-colors duration-150"
+            className="font-data-mono text-label-caps uppercase tracking-widest text-outline hover:text-primary-container transition-colors duration-200 py-xs"
           >
             LINKEDIN
           </a>
@@ -28,7 +28,7 @@ const Footer = () => {
             href="https://www.youtube.com/@sakib3201"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-data-mono text-label-caps uppercase tracking-widest text-slate-600 hover:text-primary-container transition-colors duration-150"
+            className="font-data-mono text-label-caps uppercase tracking-widest text-outline hover:text-primary-container transition-colors duration-200 py-xs"
           >
             YOUTUBE
           </a>

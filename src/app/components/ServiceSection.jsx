@@ -44,10 +44,10 @@ const ServiceSection = () => {
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.3, ease: "easeOut", delay: i * 0.1 }}
-            className="bg-surface-container-low border border-slate-800 p-md group hover:border-primary-container transition-colors duration-300 relative"
+            transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1], delay: i * 0.1 }}
+            className="bg-surface-container-low border border-outline-variant p-md group hover:border-primary-container transition-colors duration-200 relative"
           >
-            <div className="border-b border-slate-800 pb-sm mb-md">
+            <div className="border-b border-outline-variant pb-sm mb-md">
               <h3 className="font-data-mono text-data-mono text-primary-container uppercase tracking-widest">
                 {"Expertise // "}{card.id}
               </h3>

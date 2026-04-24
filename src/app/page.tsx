@@ -48,7 +48,7 @@ export default function Home() {
           <span className="font-data-mono text-label-caps text-primary-container uppercase tracking-widest block mb-xs animate-glitch">
             {"// FEATURED WORK"}
           </span>
-          <h2 className="font-headline-lg text-headline-lg text-on-surface border-b border-slate-800 pb-sm">
+          <h2 className="font-headline-lg text-headline-lg text-on-surface border-b border-outline-variant pb-sm">
             Projects
           </h2>
         </div>

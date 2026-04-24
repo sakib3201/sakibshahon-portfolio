@@ -17,10 +17,10 @@ const ProjectCard = ({ project }) => {
       initial={{ opacity: 0, y: 16 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.3, ease: "easeOut" }}
-      className="bg-surface-container-low border border-slate-800 p-md group hover:border-primary-container transition-colors duration-300 flex flex-col gap-sm"
+      transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+      className="bg-surface-container-low border border-outline-variant p-md group hover:border-primary-container transition-colors duration-200 flex flex-col gap-sm"
     >
-      <div className="border-b border-slate-800 pb-sm">
+      <div className="border-b border-outline-variant pb-sm">
         <h3 className="font-headline-lg text-[20px] text-on-surface group-hover:text-primary-container transition-colors">
           {title}
         </h3>

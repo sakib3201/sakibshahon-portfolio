@@ -13,7 +13,7 @@ const LegacyNavbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-[#0a0a0a] border-b border-slate-800 h-16 flex items-center">
+    <nav className="fixed top-0 w-full z-50 bg-surface-container-lowest border-b border-outline-variant h-16 flex items-center">
       <div className="flex justify-between items-center w-full px-6 max-w-7xl mx-auto">
         <Link
           href="/"
@@ -26,10 +26,10 @@ const LegacyNavbar = () => {
             <Link
               key={href}
               href={href}
-              className={`font-data-mono text-label-caps uppercase tracking-widest transition-colors duration-150 ${
+              className={`font-data-mono text-label-caps uppercase tracking-widest transition-colors duration-200 py-sm ${
                 pathname === href
-                  ? "text-primary-container border-b border-primary-container pb-0.5"
-                  : "text-slate-500 hover:text-primary-container"
+                  ? "text-primary-container border-b border-primary-container"
+                  : "text-outline hover:text-primary-container"
               }`}
             >
               {label}
@@ -37,8 +37,8 @@ const LegacyNavbar = () => {
           ))}
         </div>
         <button
-          aria-label="terminal"
-          className="text-primary-container hover:bg-slate-900 transition-colors p-2"
+          aria-label="Toggle navigation"
+          className="md:hidden text-primary-container hover:bg-surface-container-low transition-colors p-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
